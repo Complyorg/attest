@@ -1,0 +1,9 @@
+{
+  "name": "@comply-org/render",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "glob": "^11.0.0"
+  }
+}

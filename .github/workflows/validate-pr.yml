@@ -1,0 +1,48 @@
+name: Validate Attestations
+
+on:
+  pull_request:
+    paths:
+      - "**/attestation.json"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+
+      - name: Validate attestation files
+        uses: complyorg/v1/validate@main
+        with:
+          attestation-glob: "**/attestation.json"
+
+      - name: Check slug/directory match
+        shell: bash
+        run: |
+          errors=0
+          for f in $(git diff --name-only --diff-filter=A origin/main...HEAD | grep 'attestation.json$'); do
+            dir=$(basename $(dirname "$f"))
+            slug=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$f','utf-8')).slug)")
+            if [ "$dir" != "$slug" ]; then
+              echo "::error file=$f::Directory '$dir' does not match slug '$slug'"
+              errors=$((errors + 1))
+            fi
+          done
+          exit $errors
+
+      - name: Check for slug collisions
+        shell: bash
+        run: |
+          # Ensure no PR adds a directory that already exists on main
+          errors=0
+          for f in $(git diff --name-only --diff-filter=A origin/main...HEAD | grep 'attestation.json$'); do
+            dir=$(dirname "$f")
+            if git ls-tree -d origin/main "$dir" 2>/dev/null | grep -q .; then
+              echo "::error file=$f::Slug directory '$dir' already exists on main"
+              errors=$((errors + 1))
+            fi
+          done
+          exit $errors

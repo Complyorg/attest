@@ -1,0 +1,109 @@
+#!/usr/bin/env node
+/**
+ * Comply.org Directory Index Generator
+ *
+ * Scans all attestation.json files and generates a root index.html directory listing.
+ */
+import { readFileSync, writeFileSync } from "node:fs";
+import { glob } from "glob";
+
+function esc(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function scoreColor(score) {
+  if (score >= 70) return "#005981";
+  if (score >= 40) return "#64748b";
+  return "#94454d";
+}
+
+const files = await glob("*/attestation.json", {
+  ignore: ["node_modules/**", "_render/**", ".git/**"],
+});
+
+const vendors = [];
+for (const file of files) {
+  const data = JSON.parse(readFileSync(file, "utf-8"));
+  vendors.push({
+    slug: data.slug,
+    name: data.name,
+    category: data.category,
+    subcategory: data.subcategory,
+    transparencyScore: data.transparencyScore,
+    dpaScore: data.dpaAnalysis?.overallScore ?? null,
+    hasExpertReview: (data.expertReviews || []).length > 0,
+  });
+}
+
+vendors.sort((a, b) => a.name.localeCompare(b.name));
+
+const rows = vendors
+  .map(
+    (v) => `<tr>
+      <td><a href="/${esc(v.slug)}/">${esc(v.name)}</a></td>
+      <td>${esc(v.category)}${v.subcategory ? ` / ${esc(v.subcategory)}` : ""}</td>
+      <td style="color:${scoreColor(v.transparencyScore)}">${v.transparencyScore}%</td>
+      <td>${v.dpaScore != null ? `<span style="color:${scoreColor(v.dpaScore)}">${v.dpaScore}%</span>` : "—"}</td>
+      <td>${v.hasExpertReview ? '<span class="badge badge-verified">Verified</span>' : ""}</td>
+    </tr>`
+  )
+  .join("\n    ");
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Vendor Attestation Directory | Comply.org</title>
+  <meta name="description" content="Public vendor compliance attestation directory. Open standard for vendor transparency.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, system-ui, sans-serif; color: #191A1A; background: #ffffff; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    h1 { font-size: 1.75rem; font-weight: 700; color: #005981; margin-bottom: 0.5rem; }
+    .subtitle { color: #444551; font-size: 0.875rem; margin-bottom: 2rem; }
+    .badge { display: inline-block; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; border: 1px solid; }
+    .badge-verified { color: #15803d; border-color: #86efac; background: rgba(34,197,94,0.08); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    th { text-align: left; padding: 0.625rem 0.5rem; border-bottom: 2px solid #e5e7eb; color: #444551; font-weight: 600; }
+    td { padding: 0.625rem 0.5rem; border-bottom: 1px solid #f3f4f6; }
+    a { color: #005981; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; text-align: center; font-size: 0.75rem; color: #444551; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Vendor Attestation Directory</h1>
+  <p class="subtitle">${vendors.length} vendor attestations published under the <a href="https://comply.org">Comply.org Open Standard</a></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Vendor</th>
+        <th>Category</th>
+        <th>Transparency</th>
+        <th>DPA Score</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    ${rows}
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <p><a href="https://comply.org">Comply.org Attestation Standard v1.0</a></p>
+    <p>Generated ${new Date().toISOString().split("T")[0]}</p>
+  </div>
+</div>
+</body>
+</html>`;
+
+writeFileSync("index.html", html, "utf-8");
+console.log(`Generated directory index with ${vendors.length} vendor(s).`);

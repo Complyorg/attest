@@ -1,0 +1,39 @@
+name: Weekly Attestation Sweep
+
+on:
+  schedule:
+    # Monday 6 AM UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate all attestations
+        uses: complyorg/v1/validate@main
+        with:
+          attestation-glob: "**/attestation.json"
+
+      - name: Warn on stale attestations
+        shell: bash
+        run: |
+          threshold=$(date -d "-365 days" +%Y-%m-%d 2>/dev/null || date -v-365d +%Y-%m-%d)
+          echo "Checking for attestations older than $threshold..."
+          stale=0
+          for f in $(find . -name 'attestation.json' -not -path './_render/*' -not -path './node_modules/*' -not -path './.git/*'); do
+            generated=$(node -e "
+              const d = JSON.parse(require('fs').readFileSync('$f','utf-8'));
+              console.log(d.generated || '');
+            ")
+            if [ -n "$generated" ] && [ "$generated" \< "$threshold" ]; then
+              echo "::warning file=$f::Attestation generated on $generated is older than 1 year"
+              stale=$((stale + 1))
+            fi
+          done
+          echo "Found $stale stale attestation(s)"
