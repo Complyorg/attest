@@ -44,7 +44,7 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 - Anonymization
 
-- [Privacy Notice](https://mhmarkets.com/ae/en/privacy-policy)
+- [Privacy Notice](https://www.trackingplan.com/privacy-policy)
 - [Website](https://www.trackingplan.com)
 
 ## Expert Reviews

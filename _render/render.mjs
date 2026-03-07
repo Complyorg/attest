@@ -234,7 +234,12 @@ function generateHtml(data) {
         <span class="subtitle">${date}${platform}</span>
       </div>`;
       if (review.summaryReport) {
-        const excerpt = review.summaryReport.length > 300 ? review.summaryReport.slice(0, 300) + "..." : review.summaryReport;
+        let excerpt = review.summaryReport;
+        if (excerpt.length > 300) {
+          const truncated = excerpt.slice(0, 300);
+          const lastPeriod = truncated.lastIndexOf(".");
+          excerpt = lastPeriod > 100 ? truncated.slice(0, lastPeriod + 1) : truncated + "...";
+        }
         reviewsHtml += `<p style="font-size:0.875rem;color:#444551;margin-top:0.5rem">${esc(excerpt)}</p>`;
       }
       reviewsHtml += `</div>`;
@@ -351,7 +356,6 @@ function generateHtml(data) {
       <p>Generated ${generatedDate}</p>
     </div>
     <div class="footer-right">
-      <div class="footer-label">Open Standard</div>
       <p><a href="https://comply.org">Comply.org Attestation Standard v1.0</a></p>
       <p>Code: MIT &middot; Specification: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a></p>
     </div>
