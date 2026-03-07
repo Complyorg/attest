@@ -1,0 +1,82 @@
+{
+  "$complyVersion": "1.0",
+  "slug": "trackingplan",
+  "name": "Trackingplan",
+  "category": "Analytics & BI",
+  "subcategory": "Web Analytics",
+  "description": "Automatically detect what's affecting your digital analytics, maintain up-to-date tracking plans, and foster seamless collaboration with Trackingplan.",
+  "website": "https://www.trackingplan.com",
+  "privacyPolicyUrl": "https://mhmarkets.com/ae/en/privacy-policy",
+  "trustCenterUrl": null,
+  "dpaUrl": null,
+  "securityPageUrl": null,
+  "certifications": [],
+  "frameworks": [
+    "GDPR"
+  ],
+  "gdprCompliant": false,
+  "ccpaCompliant": false,
+  "hipaaCompliant": null,
+  "dataLocations": [
+    "EU",
+    "Ireland"
+  ],
+  "hasEuDataCenter": true,
+  "subprocessors": [],
+  "transferSafeguards": "No international transfers — EU-only processing",
+  "supportsDsars": true,
+  "hasDesignatedDpo": true,
+  "hasRecentBreach": false,
+  "encryptionAtRest": true,
+  "encryptionInTransit": true,
+  "penTestFrequency": "annually",
+  "breachNotificationDays": 72,
+  "dataRetentionPolicy": "Data retained for contract duration, deleted upon termination",
+  "privacyTechnologies": [
+    "Anonymization"
+  ],
+  "euAiActCompliant": null,
+  "aiCapabilities": [],
+  "aiTechniques": [],
+  "euAiActRole": null,
+  "iso42001Certified": null,
+  "transparencyScore": 56,
+  "dpaAnalysis": null,
+  "expertReviews": [
+    {
+      "expertRefCode": "EXP-2026-SM02",
+      "issuingPlatform": "vendor.watch",
+      "issuingPlatformUrl": "https://vendor.watch/verify/EXP-2026-SM02",
+      "expertType": "legal",
+      "completedAt": "2026-03-06T00:00:00.000Z",
+      "summaryReport": "Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is fully EU-based via AWS Ireland. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure provider Amazon Web Services. Trackingplan applies anonymization techniques, encrypts data at rest and in transit, and has a comprehensive DPA covering all required clauses. All six core principles are verified.",
+      "principles": {
+        "transparency": {
+          "status": "verified",
+          "notes": "Clear documentation of data collection and processing practices. Privacy policy and DPA publicly available."
+        },
+        "dataMinimization": {
+          "status": "verified",
+          "notes": "Processes only the analytics metadata necessary for data quality monitoring. Anonymization techniques applied."
+        },
+        "accountability": {
+          "status": "verified",
+          "notes": "GDPR-compliant framework. Comprehensive DPA. ISO 27001 and SOC 2 inherited from AWS infrastructure. Business Continuity Plan and Data Breach Notification Procedures in place."
+        },
+        "security": {
+          "status": "verified",
+          "notes": "Encryption at rest and in transit. Annual penetration testing. EU-only data processing via AWS Ireland. ISO 27001 and SOC 2 inherited from subprocessor."
+        },
+        "quality": {
+          "status": "verified",
+          "notes": "EU data center ensures data sovereignty. Anonymization techniques ensure data quality without personal data dependency."
+        },
+        "participation": {
+          "status": "verified",
+          "notes": "Supports DSARs. Designated DPO. Processes in place for data subject rights."
+        }
+      }
+    }
+  ],
+  "generated": "2026-03-07"
+}
