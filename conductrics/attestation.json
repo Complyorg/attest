@@ -1,0 +1,84 @@
+{
+  "$complyVersion": "1.0",
+  "slug": "conductrics",
+  "name": "Conductrics",
+  "category": "Personalization & Engagement",
+  "subcategory": "A/B Testing",
+  "description": "Discover how the Conductrics platform integrates A/B and Multivariate tests, survey data and machine learning for enterprise-level experiments.",
+  "website": "https://www.conductrics.com",
+  "privacyPolicyUrl": "https://www.conductrics.com/./manage#data-privacy",
+  "trustCenterUrl": null,
+  "dpaUrl": "https://blog.conductrics.com/gdpr/",
+  "securityPageUrl": null,
+  "certifications": [],
+  "frameworks": [
+    "GDPR",
+    "CCPA"
+  ],
+  "gdprCompliant": false,
+  "ccpaCompliant": false,
+  "hipaaCompliant": null,
+  "dataLocations": [
+    "EU",
+    "US"
+  ],
+  "hasEuDataCenter": true,
+  "subprocessors": [],
+  "transferSafeguards": "SCCs",
+  "supportsDsars": true,
+  "hasDesignatedDpo": true,
+  "hasRecentBreach": false,
+  "encryptionAtRest": true,
+  "encryptionInTransit": true,
+  "penTestFrequency": "annually",
+  "breachNotificationDays": 72,
+  "dataRetentionPolicy": "Data retained for contract duration, deleted upon termination",
+  "privacyTechnologies": [
+    "Anonymization",
+    "K-Anonymity"
+  ],
+  "euAiActCompliant": null,
+  "aiCapabilities": [],
+  "aiTechniques": [],
+  "euAiActRole": null,
+  "iso42001Certified": null,
+  "transparencyScore": 67,
+  "dpaAnalysis": null,
+  "expertReviews": [
+    {
+      "expertRefCode": "EXP-2026-SM03",
+      "issuingPlatform": "vendor.watch",
+      "issuingPlatformUrl": "https://vendor.watch/verify/EXP-2026-SM03",
+      "expertType": "legal",
+      "completedAt": "2026-03-06T00:00:00.000Z",
+      "summaryReport": "Conductrics provides privacy-focused A/B testing and experimentation. Data processing is available in both EU and US regions via Google Cloud Platform and Amazon Web Services. Conductrics applies anonymization and K-Anonymity techniques to protect individual-level data. They encrypt data at rest and in transit, and have a comprehensive DPA covering all GDPR and CCPA required clauses at 100%. All six core principles are verified.",
+      "principles": {
+        "transparency": {
+          "status": "verified",
+          "notes": "Full transparency on data collection and experimentation practices. Privacy policy and DPA publicly available."
+        },
+        "dataMinimization": {
+          "status": "verified",
+          "notes": "K-Anonymity and anonymization techniques ensure minimal personal data exposure. Collects only data necessary for experimentation."
+        },
+        "accountability": {
+          "status": "verified",
+          "notes": "GDPR and CCPA compliant framework. Comprehensive DPA scoring 100% across both regulations. Business Continuity Plan and Data Breach Notification Procedures in place."
+        },
+        "security": {
+          "status": "verified",
+          "notes": "Encryption at rest and in transit. Annual penetration testing. Infrastructure hosted on GCP and AWS with inherited security certifications."
+        },
+        "quality": {
+          "status": "verified",
+          "notes": "EU data center availability ensures data sovereignty. K-Anonymity techniques maintain statistical quality while protecting privacy."
+        },
+        "participation": {
+          "status": "verified",
+          "notes": "Supports DSARs. Designated DPO. Full data subject rights processes in place."
+        }
+      }
+    }
+  ],
+  "generated": "2026-03-07"
+}
