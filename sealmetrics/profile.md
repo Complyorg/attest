@@ -1,5 +1,5 @@
 ---
-slug: seal-metrics
+slug: sealmetrics
 name: "Seal Metrics"
 category: "Analytics & BI"
 subcategory: "Web Analytics"

@@ -1,6 +1,6 @@
 {
   "description": "Tracks vendor slugs owned by VendorWatch. Used for cleanup of stale entries.",
   "slugs": [
-    "seal-metrics"
+    "sealmetrics"
   ]
 }
