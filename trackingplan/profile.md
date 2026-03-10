@@ -5,9 +5,9 @@ category: "Analytics & BI"
 subcategory: "Web Analytics"
 status: "Expert-Verified"
 jurisdictions: []
-transparencyScore: 56
+transparencyScore: 50
 
-generated: "2026-03-07"
+generated: "2026-03-10"
 ---
 
 # Trackingplan
@@ -18,7 +18,7 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 ## Summary
 
-- Transparency Score: 56%
+- Transparency Score: 50%
 
 - Designated DPO: Yes
 
@@ -47,6 +47,10 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 - [Privacy Notice](https://www.trackingplan.com/privacy-policy)
 - [Website](https://www.trackingplan.com)
 
+## AI Disclosure
+
+This vendor does not use artificial intelligence.
+
 ## Expert Reviews
 
 ### EXP-2026-SM02 (Legal) — 2026-03-06 (vendor.watch)
@@ -56,6 +60,6 @@ Trackingplan provides automated data quality monitoring for analytics implementa
 
 ---
 
-*Generated 2026-03-07.*
+*Generated 2026-03-10.*
 
-*[Comply.org Attestation Standard v1.0](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

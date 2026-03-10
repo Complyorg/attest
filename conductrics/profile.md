@@ -5,9 +5,9 @@ category: "Personalization & Engagement"
 subcategory: "A/B Testing"
 status: "Expert-Verified"
 jurisdictions: ["US"]
-transparencyScore: 67
+transparencyScore: 60
 
-generated: "2026-03-07"
+generated: "2026-03-10"
 ---
 
 # Conductrics
@@ -18,7 +18,7 @@ Discover how the Conductrics platform integrates A/B and Multivariate tests, sur
 
 ## Summary
 
-- Transparency Score: 67%
+- Transparency Score: 60%
 
 - Designated DPO: Yes
 
@@ -49,6 +49,11 @@ Discover how the Conductrics platform integrates A/B and Multivariate tests, sur
 - [Privacy Notice](https://www.conductrics.com/./manage#data-privacy)
 - [Website](https://www.conductrics.com)
 
+## AI Disclosure
+
+- Transparency Level: **Opaque**
+- AI models not disclosed
+
 ## Expert Reviews
 
 ### EXP-2026-SM03 (Legal) — 2026-03-06 (vendor.watch)
@@ -58,6 +63,6 @@ Conductrics provides privacy-focused A/B testing and experimentation. Data proce
 
 ---
 
-*Generated 2026-03-07.*
+*Generated 2026-03-10.*
 
-*[Comply.org Attestation Standard v1.0](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

@@ -1,5 +1,5 @@
 {
-  "$complyVersion": "1.0",
+  "$complyVersion": "1.1",
   "slug": "sealmetrics",
   "name": "Seal Metrics",
   "category": "Analytics & BI",
@@ -27,57 +27,24 @@
   "supportsDsars": true,
   "hasDesignatedDpo": true,
   "hasRecentBreach": false,
-  "encryptionAtRest": true,
-  "encryptionInTransit": true,
-  "penTestFrequency": "annually",
-  "breachNotificationDays": 72,
-  "dataRetentionPolicy": "Data retained for contract duration, deleted upon termination",
-  "privacyTechnologies": [
-    "Anonymization",
-    "Pseudonymization"
-  ],
+  "encryptionAtRest": null,
+  "encryptionInTransit": null,
+  "penTestFrequency": null,
+  "breachNotificationDays": null,
+  "dataRetentionPolicy": null,
+  "privacyTechnologies": [],
   "euAiActCompliant": null,
   "aiCapabilities": [],
   "aiTechniques": [],
   "euAiActRole": null,
   "iso42001Certified": null,
-  "transparencyScore": 67,
+  "aiDisclosure": {
+    "status": "none",
+    "transparencyLevel": "n/a",
+    "models": []
+  },
+  "transparencyScore": 50,
   "dpaAnalysis": null,
-  "expertReviews": [
-    {
-      "expertRefCode": "EXP-2026-SM01",
-      "issuingPlatform": "vendor.watch",
-      "issuingPlatformUrl": "https://vendor.watch/verify/EXP-2026-SM01",
-      "expertType": "legal",
-      "completedAt": "2026-03-06T00:00:00.000Z",
-      "summaryReport": "Seal Metrics provides cookieless, consent-free web analytics by design. Their architecture ensures no personal data is collected, removing the need for cookie consent banners. Data processing is fully EU-based via Noraina (Ireland). While they do not hold ISO 27001 or SOC 2 certifications directly, their infrastructure provider Noraina maintains ISO 27001 certification. Seal Metrics has a comprehensive DPA, a Business Continuity Plan, and Data Breach Notification Procedures in place. All six core principles are verified.",
-      "principles": {
-        "transparency": {
-          "status": "verified",
-          "notes": "Full transparency on data collection practices. Privacy-by-design architecture means no personal data is processed. Clear privacy policy and DPA available."
-        },
-        "dataMinimization": {
-          "status": "verified",
-          "notes": "Cookieless analytics by design — collects only aggregated, anonymized data. No cookies, no fingerprinting, no personal identifiers."
-        },
-        "accountability": {
-          "status": "verified",
-          "notes": "GDPR-compliant framework. DPA available. Business Continuity Plan and Data Breach Notification Procedures in place. ISO 27001 inherited from infrastructure provider Noraina."
-        },
-        "security": {
-          "status": "verified",
-          "notes": "Encryption at rest and in transit. Annual penetration testing. EU-only data processing via Noraina (Ireland). Business Continuity Plan in place."
-        },
-        "quality": {
-          "status": "verified",
-          "notes": "EU data center ensures data sovereignty. Anonymization and pseudonymization techniques applied to ensure data quality without personal data dependency."
-        },
-        "participation": {
-          "status": "verified",
-          "notes": "Supports DSARs. Designated DPO. By design, minimal personal data means fewer data subject rights concerns, but processes are in place."
-        }
-      }
-    }
-  ],
-  "generated": "2026-03-07"
+  "expertReviews": [],
+  "generated": "2026-03-10"
 }

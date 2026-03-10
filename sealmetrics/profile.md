@@ -3,22 +3,22 @@ slug: sealmetrics
 name: "Seal Metrics"
 category: "Analytics & BI"
 subcategory: "Web Analytics"
-status: "Expert-Verified"
+status: "Self-Reported"
 jurisdictions: []
-transparencyScore: 67
+transparencyScore: 50
 
-generated: "2026-03-07"
+generated: "2026-03-10"
 ---
 
 # Seal Metrics
 
-**Analytics & BI** / Web Analytics | Expert-Verified
+**Analytics & BI** / Web Analytics | Self-Reported
 
 Get 100% real, legal, consentless analytics data. Stop making decisions with broken GA4 data. Sealmetrics gives you complete attribution without cookies or consent banners.
 
 ## Summary
 
-- Transparency Score: 67%
+- Transparency Score: 50%
 
 - Designated DPO: Yes
 
@@ -26,38 +26,26 @@ Get 100% real, legal, consentless analytics data. Stop making decisions with bro
 
 | Principle | Status |
 |-----------|--------|
-| Transparency | Verified |
-| Data Minimization | Verified |
-| Accountability | Verified |
-| Security | Verified |
-| Quality | Verified |
-| Participation | Verified |
+| Transparency | Submitted |
+| Data Minimization | Pending |
+| Accountability | Submitted |
+| Security | Pending |
+| Quality | Submitted |
+| Participation | Submitted |
 
 ## Resources & Safeguards
 
-- Encryption at rest
-- Encryption in transit
-- Penetration testing: annually
-- Breach notification: 72 days
-
-### Privacy Enhancing Measures
-
-- Anonymization
-- Pseudonymization
 
 - [DPA](https://sealmetrics.com/dpa/)
 - [Privacy Notice](https://www.esfera-group.com/privacy)
 - [Website](https://sealmetrics.com)
 
-## Expert Reviews
+## AI Disclosure
 
-### EXP-2026-SM01 (Legal) — 2026-03-06 (vendor.watch)
-
-Seal Metrics provides cookieless, consent-free web analytics by design. Their architecture ensures no personal data is collected, removing the need for cookie consent banners. Data processing is fully EU-based via Noraina (Ireland). While they do not hold ISO 27001 or SOC 2 certifications directly, their infrastructure provider Noraina maintains ISO 27001 certification. Seal Metrics has a comprehensive DPA, a Business Continuity Plan, and Data Breach Notification Procedures in place. All six core principles are verified.
-
+This vendor does not use artificial intelligence.
 
 ---
 
-*Generated 2026-03-07.*
+*Generated 2026-03-10.*
 
-*[Comply.org Attestation Standard v1.0](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

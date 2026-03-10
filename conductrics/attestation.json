@@ -1,5 +1,5 @@
 {
-  "$complyVersion": "1.0",
+  "$complyVersion": "1.1",
   "slug": "conductrics",
   "name": "Conductrics",
   "category": "Personalization & Engagement",
@@ -42,7 +42,12 @@
   "aiTechniques": [],
   "euAiActRole": null,
   "iso42001Certified": null,
-  "transparencyScore": 67,
+  "aiDisclosure": {
+    "status": "undisclosed",
+    "transparencyLevel": "opaque",
+    "models": []
+  },
+  "transparencyScore": 60,
   "dpaAnalysis": null,
   "expertReviews": [
     {
@@ -80,5 +85,5 @@
       }
     }
   ],
-  "generated": "2026-03-07"
+  "generated": "2026-03-10"
 }
