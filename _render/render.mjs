@@ -79,6 +79,99 @@ function getPrincipleAssessment(key, data) {
   return derivePrincipleStatus(key, data);
 }
 
+// ── AI Disclosure helpers ────────────────────────────────────────
+
+function resolveAiDisclosure(data) {
+  // Prefer structured aiDisclosure; fall back to flat aiModels/aiTransparencyLevel
+  if (data.aiDisclosure !== undefined) return data.aiDisclosure;
+  // Backwards compat: flat fields from VW transition period
+  if (!data.aiModels && !data.aiTransparencyLevel) return null;
+  const models = Array.isArray(data.aiModels) ? data.aiModels : [];
+  const level = data.aiTransparencyLevel || "n/a";
+  if (level === "n/a" && models.length === 0) return { status: "none", transparencyLevel: "n/a", models: [] };
+  if (models.length > 0) return { status: "disclosed", transparencyLevel: level, models };
+  return { status: "undisclosed", transparencyLevel: level, models: [] };
+}
+
+function aiTransparencyBadge(level) {
+  const colors = {
+    transparent: "color:#15803d;border-color:#86efac;background:rgba(34,197,94,0.08)",
+    partial: "color:#92400e;border-color:#fcd34d;background:rgba(251,191,36,0.08)",
+    opaque: "color:#94454d;border-color:#fca5a5;background:rgba(239,68,68,0.08)",
+  };
+  const labels = { transparent: "Transparent", partial: "Partially Transparent", opaque: "Opaque", "n/a": "N/A" };
+  return `<span class="badge" style="${colors[level] ?? ""}">${labels[level] ?? level}</span>`;
+}
+
+function renderAiDisclosureHtml(data) {
+  const ai = resolveAiDisclosure(data);
+  if (!ai) return "";
+
+  let html = `<h2 id="ai-disclosure">AI Disclosure</h2>`;
+
+  if (ai.status === "none") {
+    html += `<p style="color:#444551;font-size:0.875rem">This vendor does not use artificial intelligence.</p>`;
+    return html;
+  }
+
+  if (ai.transparencyLevel && ai.transparencyLevel !== "n/a") {
+    html += `<div style="margin-bottom:0.75rem"><span class="row-label">Transparency Level:</span> ${aiTransparencyBadge(ai.transparencyLevel)}</div>`;
+  }
+
+  if (ai.status === "undisclosed") {
+    html += `<p style="color:#444551;font-size:0.875rem">This vendor uses AI but has not disclosed specific models.</p>`;
+    return html;
+  }
+
+  if (ai.models && ai.models.length > 0) {
+    html += `<table>
+    <thead><tr><th>Model</th><th>Type</th><th>Provider</th><th>EU AI Act Risk</th><th>Open Source</th></tr></thead>
+    <tbody>`;
+    for (const m of ai.models) {
+      html += `<tr><td>${esc(m.name)}</td><td>${esc(m.type)}</td><td>${m.provider ? esc(m.provider) : "—"}</td><td>${m.euAiActRiskTier ? esc(m.euAiActRiskTier) : "—"}</td><td>${m.isOpenSource === true ? "Yes" : m.isOpenSource === false ? "No" : "—"}</td></tr>`;
+    }
+    html += `</tbody></table>`;
+  }
+
+  return html;
+}
+
+function renderAiDisclosureMd(data) {
+  const ai = resolveAiDisclosure(data);
+  if (!ai) return "";
+
+  let md = `\n## AI Disclosure\n\n`;
+
+  if (ai.status === "none") {
+    md += `This vendor does not use artificial intelligence.\n`;
+    return md;
+  }
+
+  if (ai.transparencyLevel && ai.transparencyLevel !== "n/a") {
+    const labels = { transparent: "Transparent", partial: "Partially Transparent", opaque: "Opaque" };
+    md += `- Transparency Level: **${labels[ai.transparencyLevel] ?? ai.transparencyLevel}**\n`;
+  }
+
+  if (ai.status === "undisclosed") {
+    md += `- AI models not disclosed\n`;
+    return md;
+  }
+
+  if (ai.models && ai.models.length > 0) {
+    md += `\n| Model | Type | Provider | EU AI Act Risk | Open Source |\n|-------|------|----------|----------------|-------------|\n`;
+    for (const m of ai.models) {
+      md += `| ${m.name} | ${m.type} | ${m.provider ?? "—"} | ${m.euAiActRiskTier ?? "—"} | ${m.isOpenSource === true ? "Yes" : m.isOpenSource === false ? "No" : "—"} |\n`;
+    }
+  }
+
+  return md;
+}
+
+function hasAiDisclosureContent(data) {
+  const ai = resolveAiDisclosure(data);
+  return ai != null;
+}
+
 // ── HTML Generator ──────────────────────────────────────────────
 
 function generateHtml(data) {
@@ -332,6 +425,7 @@ function generateHtml(data) {
     <a href="#summary">Summary</a>
     <a href="#principles">Core Principles</a>
     <a href="#resources">Resources</a>
+    ${hasAiDisclosureContent(data) ? '<a href="#ai-disclosure">AI Disclosure</a>' : ""}
     ${dpa ? '<a href="#dpa">DPA Analysis</a>' : ""}
     ${subs.length > 0 ? '<a href="#subprocessors">Subprocessors</a>' : ""}
     ${hasExpertReviews ? '<a href="#reviews">Reviews</a>' : ""}
@@ -346,6 +440,8 @@ function generateHtml(data) {
   <h2 id="resources">Resources &amp; Safeguards</h2>
   ${resources}
 
+  ${renderAiDisclosureHtml(data)}
+
   ${dpaHtml}
   ${subsHtml}
   ${reviewsHtml}
@@ -356,7 +452,7 @@ function generateHtml(data) {
       <p>Generated ${generatedDate}</p>
     </div>
     <div class="footer-right">
-      <p><a href="https://comply.org">Comply.org Attestation Standard v1.0</a></p>
+      <p><a href="https://comply.org">Comply.org Attestation Standard v${data.$complyVersion || "1.0"}</a></p>
       <p>Code: MIT &middot; Specification: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a></p>
     </div>
   </div>
@@ -432,6 +528,8 @@ ${dpa ? `- DPA Compliance Score: ${dpa.overallScore}%` : ""}
     md += `\n${links.map(([label, url]) => `- [${label}](${url})`).join("\n")}\n`;
   }
 
+  md += renderAiDisclosureMd(data);
+
   if (dpa) {
     md += `\n## DPA Compliance Analysis\n\n| Law | Score | Percentage |\n|-----|-------|------------|\n`;
     for (const law of [{ label: "GDPR", data: dpa.gdpr }, { label: "CCPA", data: dpa.ccpa }]) {
@@ -458,7 +556,7 @@ ${dpa ? `- DPA Compliance Score: ${dpa.overallScore}%` : ""}
   }
 
   md += `\n---\n\n*Generated ${generatedDate}.*\n`;
-  md += `\n*[Comply.org Attestation Standard v1.0](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*\n`;
+  md += `\n*[Comply.org Attestation Standard v${data.$complyVersion || "1.0"}](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*\n`;
 
   return md;
 }
