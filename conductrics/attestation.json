@@ -7,7 +7,7 @@
   "description": "Discover how the Conductrics platform integrates A/B and Multivariate tests, survey data and machine learning for enterprise-level experiments.",
   "website": "https://www.conductrics.com",
   "privacyPolicyUrl": "https://www.conductrics.com/./manage#data-privacy",
-  "trustCenterUrl": null,
+  "trustCenterUrl": "https://attest.comply.org/conductrics/",
   "dpaUrl": "Upon request",
   "securityPageUrl": null,
   "certifications": [],
@@ -85,7 +85,7 @@
       }
     ]
   },
-  "transparencyScore": 70,
+  "transparencyScore": 80,
   "dpaAnalysis": {
     "overallScore": 100,
     "gdpr": {
