@@ -8,19 +8,19 @@
   "website": "https://www.conductrics.com",
   "privacyPolicyUrl": "https://www.conductrics.com/./manage#data-privacy",
   "trustCenterUrl": null,
-  "dpaUrl": "https://blog.conductrics.com/gdpr/",
+  "dpaUrl": "Upon request",
   "securityPageUrl": null,
   "certifications": [],
   "frameworks": [
     "GDPR",
     "CCPA"
   ],
-  "gdprCompliant": false,
-  "ccpaCompliant": false,
+  "gdprCompliant": true,
+  "ccpaCompliant": true,
   "hipaaCompliant": null,
   "dataLocations": [
-    "EU",
-    "US"
+    "US",
+    "EU"
   ],
   "hasEuDataCenter": true,
   "subprocessors": [],
@@ -30,24 +30,62 @@
   "hasRecentBreach": false,
   "encryptionAtRest": true,
   "encryptionInTransit": true,
-  "penTestFrequency": "annually",
-  "breachNotificationDays": 72,
+  "penTestFrequency": null,
+  "breachNotificationDays": null,
   "dataRetentionPolicy": "Data retained for contract duration, deleted upon termination",
   "privacyTechnologies": [
     "Anonymization",
     "K-Anonymity"
   ],
   "euAiActCompliant": null,
-  "aiCapabilities": [],
-  "aiTechniques": [],
+  "aiCapabilities": [
+    "A/B Testing Optimization",
+    "Personalization",
+    "Audience Prediction"
+  ],
+  "aiTechniques": [
+    "Reinforcement Learning",
+    "Multi-Armed Bandits",
+    "Q-Learning",
+    "Decision Trees"
+  ],
   "euAiActRole": null,
   "iso42001Certified": null,
   "aiDisclosure": {
-    "status": "undisclosed",
-    "transparencyLevel": "opaque",
-    "models": []
+    "status": "disclosed",
+    "transparencyLevel": "transparent",
+    "models": [
+      {
+        "name": "Proprietary Reinforcement Learning Models",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      },
+      {
+        "name": "Multi-Armed Bandit Engine",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      },
+      {
+        "name": "Q-Learning Decision Engine",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      },
+      {
+        "name": "Decision Tree Classifier",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      }
+    ]
   },
-  "transparencyScore": 60,
+  "transparencyScore": 70,
   "dpaAnalysis": null,
   "expertReviews": [
     {
@@ -85,5 +123,5 @@
       }
     }
   ],
-  "generated": "2026-03-10"
+  "generated": "2026-04-08"
 }
