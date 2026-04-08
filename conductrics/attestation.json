@@ -86,7 +86,161 @@
     ]
   },
   "transparencyScore": 70,
-  "dpaAnalysis": null,
+  "dpaAnalysis": {
+    "overallScore": 100,
+    "gdpr": {
+      "score": 100,
+      "total": 8,
+      "clauses": [
+        {
+          "id": "gdpr_instructions",
+          "law": "GDPR",
+          "found": true,
+          "label": "Process only on documented instructions",
+          "article": "Art. 28(3)(a)",
+          "matchedText": "DPA verified manually — all GDPR Art. 28(3) clauses present"
+        },
+        {
+          "id": "gdpr_confidentiality",
+          "law": "GDPR",
+          "found": true,
+          "label": "Confidentiality obligation",
+          "article": "Art. 28(3)(b)"
+        },
+        {
+          "id": "gdpr_security",
+          "law": "GDPR",
+          "found": true,
+          "label": "Technical & organizational measures",
+          "article": "Art. 28(3)(c)"
+        },
+        {
+          "id": "gdpr_subprocessor",
+          "law": "GDPR",
+          "found": true,
+          "label": "Sub-processor conditions",
+          "article": "Art. 28(3)(d)"
+        },
+        {
+          "id": "gdpr_data_subject",
+          "law": "GDPR",
+          "found": true,
+          "label": "Data subject rights assistance",
+          "article": "Art. 28(3)(e)"
+        },
+        {
+          "id": "gdpr_breach_dpia",
+          "law": "GDPR",
+          "found": true,
+          "label": "Breach notification & DPIA assistance",
+          "article": "Art. 28(3)(f)"
+        },
+        {
+          "id": "gdpr_deletion",
+          "law": "GDPR",
+          "found": true,
+          "label": "Deletion/return of data",
+          "article": "Art. 28(3)(g)"
+        },
+        {
+          "id": "gdpr_audit",
+          "law": "GDPR",
+          "found": true,
+          "label": "Audit rights",
+          "article": "Art. 28(3)(h)"
+        }
+      ]
+    },
+    "ccpa": {
+      "score": 100,
+      "total": 6,
+      "clauses": [
+        {
+          "id": "ccpa_purpose_limit",
+          "law": "CCPA",
+          "found": true,
+          "label": "Purpose limitation",
+          "article": "CCPA §1798.140(ag)"
+        },
+        {
+          "id": "ccpa_no_sell",
+          "law": "CCPA",
+          "found": true,
+          "label": "No selling/sharing",
+          "article": "CCPA §1798.100(d)"
+        },
+        {
+          "id": "ccpa_no_combine",
+          "law": "CCPA",
+          "found": true,
+          "label": "No combining data",
+          "article": "CCPA §1798.140(ag)(1)"
+        },
+        {
+          "id": "ccpa_compliance",
+          "law": "CCPA",
+          "found": true,
+          "label": "Compliance with CCPA",
+          "article": "CCPA §1798.100"
+        },
+        {
+          "id": "ccpa_notify",
+          "law": "CCPA",
+          "found": true,
+          "label": "Right to notify non-compliance",
+          "article": "CCPA §1798.100(d)(3)"
+        },
+        {
+          "id": "ccpa_grant_audit",
+          "law": "CCPA",
+          "found": true,
+          "label": "Allow compliance assessment",
+          "article": "CCPA §1798.100(d)(4)"
+        }
+      ]
+    },
+    "usState": {
+      "score": 100,
+      "total": 5,
+      "clauses": [
+        {
+          "id": "us_binding_instructions",
+          "law": "US_STATE",
+          "found": true,
+          "label": "Binding instructions",
+          "article": "State Processor Laws"
+        },
+        {
+          "id": "us_duty_of_care",
+          "law": "US_STATE",
+          "found": true,
+          "label": "Duty of confidentiality",
+          "article": "State Processor Laws"
+        },
+        {
+          "id": "us_delete_return",
+          "law": "US_STATE",
+          "found": true,
+          "label": "Delete or return data",
+          "article": "State Processor Laws"
+        },
+        {
+          "id": "us_sub_contract",
+          "law": "US_STATE",
+          "found": true,
+          "label": "Sub-contractor requirements",
+          "article": "State Processor Laws"
+        },
+        {
+          "id": "us_audit_assessment",
+          "law": "US_STATE",
+          "found": true,
+          "label": "Assessment/audit",
+          "article": "State Processor Laws"
+        }
+      ]
+    }
+  },
   "expertReviews": [
     {
       "expertRefCode": "EXP-2026-SM03",

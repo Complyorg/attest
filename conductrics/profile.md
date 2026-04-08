@@ -6,7 +6,7 @@ subcategory: "A/B Testing"
 status: "Expert-Verified"
 jurisdictions: ["EU", "CA", "US"]
 transparencyScore: 70
-
+dpaComplianceScore: 100
 generated: "2026-04-08"
 ---
 
@@ -19,7 +19,7 @@ Discover how the Conductrics platform integrates A/B and Multivariate tests, sur
 ## Summary
 
 - Transparency Score: 70%
-
+- DPA Compliance Score: 100%
 - Designated DPO: Yes
 
 ## Core Principles
@@ -40,10 +40,9 @@ Discover how the Conductrics platform integrates A/B and Multivariate tests, sur
 
 ### Privacy Enhancing Measures
 
-- Anonymization
-- K-Anonymity
+- **De-Identification**: Anonymization
 
-- [DPA](Upon request)
+- **DPA**: Upon request
 - [Privacy Notice](https://www.conductrics.com/./manage#data-privacy)
 - [Website](https://www.conductrics.com)
 
@@ -58,15 +57,22 @@ Discover how the Conductrics platform integrates A/B and Multivariate tests, sur
 | Q-Learning Decision Engine | Custom ML | — | minimal | No |
 | Decision Tree Classifier | Custom ML | — | minimal | No |
 
+## DPA Compliance Analysis
+
+| Law | Score | Percentage |
+|-----|-------|------------|
+| GDPR | 100/8 | 1250% |
+| CCPA | 100/6 | 1667% |
+
 ## Expert Reviews
 
-### EXP-2026-SM03 (Legal) — 2026-03-06 (vendor.watch)
+### EXP-2026-SM03 (Legal) — 2026-03-06
 
 Conductrics provides privacy-focused A/B testing and experimentation. Data processing is available in both EU and US regions via Google Cloud Platform and Amazon Web Services. Conductrics applies anonymization and K-Anonymity techniques to protect individual-level data. They encrypt data at rest and in transit, and have a comprehensive DPA covering all GDPR and CCPA required clauses at 100%. All six core principles are verified.
 
 
 ---
 
-*Generated 2026-04-08.*
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-04-08.*
 
-*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
