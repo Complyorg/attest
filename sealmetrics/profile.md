@@ -40,8 +40,12 @@ Get 100% real, legal, consentless analytics data. Stop making decisions with bro
 - [Privacy Notice](https://www.esfera-group.com/privacy)
 - [Website](https://sealmetrics.com)
 
+## AI Disclosure
+
+This vendor does not use artificial intelligence.
+
 ---
 
-*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-04-12.*
+*Generated 2026-04-12.*
 
-*[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
