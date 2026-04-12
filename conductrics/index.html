@@ -5,64 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
   <title>Conductrics — Compliance Profile | Comply.org</title>
-  <meta name="description" content="Public compliance profile for Conductrics. Verified vendor attestation on Comply.org.">
+  <meta name="description" content="Public compliance profile for Conductrics. Verified vendor data from Vendor.Watch.">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Conductrics","url":"https://www.conductrics.com","description":"Discover how the Conductrics platform integrates A/B and Multivariate tests, survey data and machine learning for enterprise-level experiments."}</script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Inter, system-ui, sans-serif; color: #191A1A; background: #ffffff; line-height: 1.6; }
     .container { max-width: 860px; margin: 0 auto; padding: 2rem 1rem; }
+
+    /* Page header */
     .page-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 2px solid #005981; }
     .page-header-label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #005981; }
     .page-header-site { font-size: 0.8rem; color: #94a3b8; }
     h1 { font-size: 1.75rem; font-weight: 700; color: #005981; margin-bottom: 0.25rem; }
     .header-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 0.25rem; }
+
+    /* Badges — brand-aligned, subtle */
     .badge { display: inline-block; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; border: 1px solid; }
     .badge-verified { color: #15803d; border-color: #86efac; background: rgba(34,197,94,0.08); }
     .badge-submitted { color: #92400e; border-color: #fcd34d; background: rgba(251,191,36,0.08); }
     .badge-outline { color: #444551; border-color: #d1d5db; background: transparent; }
     .badge-jurisdiction { color: #005981; border-color: #b0d4e8; background: rgba(0,89,129,0.05); }
+
+    /* Quick nav */
     .quick-nav { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 2rem; padding: 0.75rem; background: #f9fafb; border-radius: 8px; }
     .quick-nav a { padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.8rem; color: #444551; text-decoration: none; transition: background 0.15s; }
     .quick-nav a:hover { background: #e5e7eb; color: #005981; }
+
+    /* Sections */
     h2 { font-size: 1.1rem; font-weight: 600; color: #005981; margin-top: 2rem; margin-bottom: 0.75rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
     .subtitle { color: #444551; font-size: 0.875rem; }
+
+    /* Grid layouts */
     .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1rem; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
     .row { display: flex; justify-content: space-between; padding: 0.375rem 0; border-bottom: 1px solid #f3f4f6; }
     .row-label { color: #444551; font-size: 0.875rem; }
     .row-value { font-size: 0.875rem; font-weight: 500; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.375rem; }
+
+    /* Score bar */
     .score-bar { height: 6px; border-radius: 3px; background: #e2e8f0; margin-top: 0.375rem; }
     .score-fill { height: 100%; border-radius: 3px; }
+
+    /* Principle cards */
     .principle-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; background: #f8f9fa; }
     .principle-card h3 { font-size: 0.875rem; font-weight: 600; color: #191A1A; margin-bottom: 0.25rem; }
     .principle-card p { font-size: 0.75rem; color: #444551; }
     .principle-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+
+    /* Checklist */
     .checklist { list-style: none; }
     .checklist li { padding: 0.375rem 0; font-size: 0.875rem; display: flex; align-items: center; gap: 0.5rem; }
     .check-yes { color: #005981; }
     .check-no { color: #cbd5e1; }
+
+    /* DPA clauses */
     .clause-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem 1rem; }
     .clause { font-size: 0.8rem; padding: 0.25rem 0; display: flex; align-items: center; gap: 0.375rem; }
+
+    /* Table */
     table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
     th { text-align: left; padding: 0.5rem; border-bottom: 2px solid #e5e7eb; color: #444551; font-weight: 600; }
     td { padding: 0.5rem; border-bottom: 1px solid #f3f4f6; }
+
+    /* Review card */
     .review-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; margin-bottom: 0.75rem; background: #f8f9fa; }
     .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+
+    /* Footer */
+    .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; font-size: 0.75rem; color: #444551; display: flex; justify-content: space-between; gap: 2rem; }
+    .footer-left, .footer-right { }
+    .footer-right { text-align: right; }
+    .footer-label { font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: #94a3b8; margin-bottom: 0.125rem; }
+    @media (max-width: 480px) { .footer { flex-direction: column; text-align: center; gap: 0.75rem; } .footer-right { text-align: center; } }
+    a { color: #005981; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Resources two-column grid */
     .resources-grid { display: grid; gap: 1.5rem; }
     .resources-grid.two-col { grid-template-columns: 1fr 1fr; }
     .resources-grid.one-col { grid-template-columns: 1fr; }
     .resources-col h3 { font-size: 0.875rem; font-weight: 600; color: #005981; margin-bottom: 0.5rem; }
-    .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; font-size: 0.75rem; color: #444551; display: flex; justify-content: space-between; gap: 2rem; }
-    .footer-label { font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: #94a3b8; margin-bottom: 0.125rem; }
-    .footer-right { text-align: right; }
-    @media (max-width: 480px) { .footer { flex-direction: column; text-align: center; gap: 0.75rem; } .footer-right { text-align: center; } }
-    a { color: #005981; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .info-link { font-size: 0.7rem; color: #94a3b8; text-decoration: none; vertical-align: super; margin-left: 0.2rem; }
+    .info-link:hover { color: #005981; text-decoration: none; }
+
     @media (max-width: 640px) { .grid, .grid-3, .clause-grid, .resources-grid.two-col { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
 <div class="container">
+  <!-- Header -->
   <div class="page-header">
     <span class="page-header-label">Vendor Attestation</span>
     <span class="page-header-site">comply.org</span>
@@ -78,6 +110,7 @@
 
   <p style="margin-bottom:1.5rem;color:#444551">Discover how the Conductrics platform integrates A/B and Multivariate tests, survey data and machine learning for enterprise-level experiments.</p>
 
+  <!-- Quick Nav -->
   <div class="quick-nav">
     <a href="#summary">Summary</a>
     <a href="#principles">Core Principles</a>
@@ -88,6 +121,7 @@
     <a href="#reviews">Reviews</a>
   </div>
 
+  <!-- Summary -->
   <h2 id="summary">Summary</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem"><div>
     <div class="row"><span class="row-label">Transparency Score</span><span class="row-value" style="color:#005981">80%</span></div>
@@ -97,6 +131,7 @@
       <div class="score-bar"><div class="score-fill" style="width:100%;background:#005981"></div></div>
     </div></div><div class="grid" style="margin-top:0.75rem"><div class="row"><span class="row-label">Headquarters</span><span class="row-value">US</span></div><div class="row"><span class="row-label">Designated DPO</span><span class="row-value">Yes</span></div></div>
 
+  <!-- Core Principles -->
   <h2 id="principles">Core Principles</h2>
   <div class="grid-3"><div class="principle-card">
       <div class="principle-header">
@@ -141,28 +176,32 @@
       <p>Supporting data subject rights including access, rectification, and deletion.</p>
     </div></div>
 
+  <!-- Resources & Safeguards -->
   <h2 id="resources">Resources &amp; Safeguards</h2>
-  <div class="resources-grid two-col"><div class="resources-col"><h3>Security Guarantees</h3><ul class="checklist"><li><span class="check-yes">&#x2713;</span> Encryption at rest</li><li><span class="check-yes">&#x2713;</span> Encryption in transit</li><li><span class="check-yes">&#x2713;</span> No recent breaches reported</li></ul></div><div class="resources-col"><h3>Privacy Enhancing Measures</h3><ul class="checklist"><li><span class="check-yes">&#x2713;</span> Anonymization</li><li><span class="check-yes">&#x2713;</span> K-Anonymity</li></ul></div></div><div style="margin-top:0.75rem"><div class="row"><span class="row-label">DPA</span><a href="Upon request" rel="noopener">Upon request</a></div><div class="row"><span class="row-label">Privacy Notice</span><a href="https://www.conductrics.com/./manage#data-privacy" rel="noopener">https://www.conductrics.com/./manage#data-privacy</a></div><div class="row"><span class="row-label">Trust Center</span><a href="https://attest.comply.org/conductrics/" rel="noopener">https://attest.comply.org/conductrics/</a></div></div>
+  <div class="resources-grid two-col"><div class="resources-col"><h3>Security Guarantees</h3><ul class="checklist"><li><span class="check-yes">&#x2713;</span> Encryption at rest <a href="https://en.wikipedia.org/wiki/Data_at_rest" target="_blank" rel="noopener" class="info-link" title="Learn more">ⓘ</a></li><li><span class="check-yes">&#x2713;</span> Encryption in transit <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener" class="info-link" title="Learn more">ⓘ</a></li><li><span class="check-yes">&#x2713;</span> No recent breaches reported</li></ul></div><div class="resources-col"><h3>Privacy Enhancing Measures</h3><p style="font-size:0.8rem;font-weight:600;color:#444551;margin:0.375rem 0 0.125rem 0">De-Identification</p><ul class="checklist" style="padding-left:0.5rem"><li><span class="check-yes">&#x2713;</span> Anonymization <a href="https://en.wikipedia.org/wiki/Data_anonymization" target="_blank" rel="noopener" class="info-link" title="Learn more">ⓘ</a></li></ul></div></div><div style="margin-top:0.75rem"><div class="row"><span class="row-label">DPA</span><span class="row-value">Upon request</span></div><div class="row"><span class="row-label">Privacy Notice</span><a href="https://www.conductrics.com/./manage#data-privacy" rel="noopener">https://www.conductrics.com/./manage#data-privacy</a></div><div class="row"><span class="row-label">Trust Center</span><a href="https://attest.comply.org/conductrics/" rel="noopener">https://attest.comply.org/conductrics/</a></div></div>
 
   <h2 id="ai-disclosure">AI Disclosure</h2><div style="margin-bottom:0.75rem"><span class="row-label">Transparency Level:</span> <span class="badge" style="color:#15803d;border-color:#86efac;background:rgba(34,197,94,0.08)">Transparent</span></div><table>
     <thead><tr><th>Model</th><th>Type</th><th>Provider</th><th>EU AI Act Risk</th><th>Open Source</th></tr></thead>
     <tbody><tr><td>Proprietary Reinforcement Learning Models</td><td>Custom ML</td><td>—</td><td>minimal</td><td>No</td></tr><tr><td>Multi-Armed Bandit Engine</td><td>Custom ML</td><td>—</td><td>minimal</td><td>No</td></tr><tr><td>Q-Learning Decision Engine</td><td>Custom ML</td><td>—</td><td>minimal</td><td>No</td></tr><tr><td>Decision Tree Classifier</td><td>Custom ML</td><td>—</td><td>minimal</td><td>No</td></tr></tbody></table>
 
   <h2 id="dpa">DPA Compliance Analysis</h2><div class="grid" style="margin-bottom:1rem"><div class="row"><span class="row-label">GDPR</span><span class="row-value" style="color:#005981">100/8 (1250%)</span></div><div class="row"><span class="row-label">CCPA</span><span class="row-value" style="color:#005981">100/6 (1667%)</span></div></div><div class="clause-grid"><div class="clause"><span class="check-yes">&#x2713;</span> Process only on documented instructions</div><div class="clause"><span class="check-yes">&#x2713;</span> Confidentiality obligation</div><div class="clause"><span class="check-yes">&#x2713;</span> Technical &amp; organizational measures</div><div class="clause"><span class="check-yes">&#x2713;</span> Sub-processor conditions</div><div class="clause"><span class="check-yes">&#x2713;</span> Data subject rights assistance</div><div class="clause"><span class="check-yes">&#x2713;</span> Breach notification &amp; DPIA assistance</div><div class="clause"><span class="check-yes">&#x2713;</span> Deletion/return of data</div><div class="clause"><span class="check-yes">&#x2713;</span> Audit rights</div><div class="clause"><span class="check-yes">&#x2713;</span> Purpose limitation</div><div class="clause"><span class="check-yes">&#x2713;</span> No selling/sharing</div><div class="clause"><span class="check-yes">&#x2713;</span> No combining data</div><div class="clause"><span class="check-yes">&#x2713;</span> Compliance with CCPA</div><div class="clause"><span class="check-yes">&#x2713;</span> Right to notify non-compliance</div><div class="clause"><span class="check-yes">&#x2713;</span> Allow compliance assessment</div></div>
+
   
+
   <h2 id="reviews">Expert Reviews</h2><div class="review-card">
       <div class="review-header">
         <div>
           <span class="badge badge-outline">EXP-2026-SM03</span>
           <span class="badge badge-verified">Legal</span>
         </div>
-        <span class="subtitle">Mar 6, 2026 · vendor.watch</span>
+        <span class="subtitle">Mar 5, 2026</span>
       </div><p style="font-size:0.875rem;color:#444551;margin-top:0.5rem">Conductrics provides privacy-focused A/B testing and experimentation. Data processing is available in both EU and US regions via Google Cloud Platform and Amazon Web Services. Conductrics applies anonymization and K-Anonymity techniques to protect individual-level data.</p></div>
 
   <div class="footer">
     <div class="footer-left">
       <div class="footer-label">Attestation</div>
-      <p>Generated 2026-04-08</p>
+      <p>Data provided by <a href="https://vendor.watch">Vendor.Watch</a></p>
+      <p>Generated 2026-04-12</p>
     </div>
     <div class="footer-right">
       <p><a href="https://comply.org">Comply.org Attestation Standard v1.1</a></p>

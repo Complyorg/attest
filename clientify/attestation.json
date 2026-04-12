@@ -1,0 +1,124 @@
+{
+  "$complyVersion": "1.1",
+  "slug": "clientify",
+  "name": "Clientify",
+  "category": "Marketing & Sales",
+  "subcategory": "CRM & Marketing Automation",
+  "description": "All-in-one CRM, marketing automation and omnichannel communications platform for SMBs, with WhatsApp, Instagram, email, telephony and live chat. Bundles sales pipelines, lead scoring, automations, landing pages, e-signature and AI-assisted features.",
+  "website": "https://clientify.com",
+  "privacyPolicyUrl": "https://clientify.com/politicas-de-privacidad",
+  "trustCenterUrl": null,
+  "dpaUrl": null,
+  "securityPageUrl": "https://clientify.com/wp-content/uploads/2024/12/SGSI-PSI-01._Politica_de_Seguridad_de_la_Informacion-4921308.pdf",
+  "certifications": [
+    "ISO 27001"
+  ],
+  "frameworks": [
+    "GDPR",
+    "EU-US Data Privacy Framework"
+  ],
+  "gdprCompliant": true,
+  "ccpaCompliant": null,
+  "hipaaCompliant": null,
+  "dataLocations": [],
+  "hasEuDataCenter": null,
+  "subprocessors": [
+    {
+      "name": "Amazon Web Services",
+      "purpose": "Cloud hosting",
+      "location": "Unknown"
+    },
+    {
+      "name": "DigitalOcean",
+      "purpose": "Cloud hosting",
+      "location": "Unknown"
+    },
+    {
+      "name": "Google Workspace",
+      "purpose": "Office productivity",
+      "location": "US/EU"
+    },
+    {
+      "name": "PayPal",
+      "purpose": "Payment processing",
+      "location": "US"
+    },
+    {
+      "name": "Stripe",
+      "purpose": "Payment processing",
+      "location": "US"
+    },
+    {
+      "name": "Intercom",
+      "purpose": "Customer support",
+      "location": "US"
+    },
+    {
+      "name": "Usercentrics (Cookiebot)",
+      "purpose": "Cookie consent",
+      "location": "EU"
+    },
+    {
+      "name": "SendGrid",
+      "purpose": "Transactional email",
+      "location": "US"
+    },
+    {
+      "name": "Zapier",
+      "purpose": "Integrations",
+      "location": "US"
+    },
+    {
+      "name": "Bird (MessageBird)",
+      "purpose": "Messaging delivery",
+      "location": "EU"
+    },
+    {
+      "name": "Holded",
+      "purpose": "Accounting software",
+      "location": "Spain"
+    },
+    {
+      "name": "Trideco Asesores, SLP",
+      "purpose": "Legal counsel",
+      "location": "Spain"
+    },
+    {
+      "name": "ACV Asesores",
+      "purpose": "Tax & accounting",
+      "location": "Spain"
+    },
+    {
+      "name": "Masalbe Servicios Globales, SL",
+      "purpose": "External DPO services",
+      "location": "Spain"
+    }
+  ],
+  "transferSafeguards": "EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (SCCs) where applicable; Transfer Impact Assessments performed.",
+  "supportsDsars": true,
+  "hasDesignatedDpo": true,
+  "hasRecentBreach": false,
+  "encryptionAtRest": null,
+  "encryptionInTransit": null,
+  "penTestFrequency": null,
+  "breachNotificationDays": null,
+  "dataRetentionPolicy": null,
+  "privacyTechnologies": [],
+  "euAiActCompliant": null,
+  "aiCapabilities": [
+    "Text Generation",
+    "Agents"
+  ],
+  "aiTechniques": [],
+  "euAiActRole": null,
+  "iso42001Certified": false,
+  "aiDisclosure": {
+    "status": "undisclosed",
+    "transparencyLevel": "opaque",
+    "models": []
+  },
+  "transparencyScore": 60,
+  "dpaAnalysis": null,
+  "expertReviews": [],
+  "generated": "2026-04-12"
+}
