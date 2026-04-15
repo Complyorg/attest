@@ -284,8 +284,9 @@ function generateHtml(data) {
     dpaHtml += `<div class="grid" style="margin-bottom:1rem">`;
     for (const law of laws) {
       if (!law.data) continue;
-      const pct = law.data.total > 0 ? Math.round((law.data.score / law.data.total) * 100) : 0;
-      dpaHtml += `<div class="row"><span class="row-label">${law.label}</span><span class="row-value" style="color:${scoreColor(pct)}">${law.data.score}/${law.data.total} (${pct}%)</span></div>`;
+      const found = (law.data.clauses || []).filter((c) => c.found).length;
+      const pct = law.data.score;
+      dpaHtml += `<div class="row"><span class="row-label">${law.label}</span><span class="row-value" style="color:${scoreColor(pct)}">${found}/${law.data.total} (${pct}%)</span></div>`;
     }
     dpaHtml += `</div>`;
     const allClauses = [...(dpa.gdpr?.clauses || []), ...(dpa.ccpa?.clauses || [])];
@@ -534,8 +535,9 @@ ${dpa ? `- DPA Compliance Score: ${dpa.overallScore}%` : ""}
     md += `\n## DPA Compliance Analysis\n\n| Law | Score | Percentage |\n|-----|-------|------------|\n`;
     for (const law of [{ label: "GDPR", data: dpa.gdpr }, { label: "CCPA", data: dpa.ccpa }]) {
       if (!law.data) continue;
-      const pct = law.data.total > 0 ? Math.round((law.data.score / law.data.total) * 100) : 0;
-      md += `| ${law.label} | ${law.data.score}/${law.data.total} | ${pct}% |\n`;
+      const found = (law.data.clauses || []).filter((c) => c.found).length;
+      const pct = law.data.score;
+      md += `| ${law.label} | ${found}/${law.data.total} | ${pct}% |\n`;
     }
   }
 

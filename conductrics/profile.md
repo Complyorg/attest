@@ -63,8 +63,8 @@ Discover how the Conductrics platform integrates A/B and Multivariate tests, sur
 
 | Law | Score | Percentage |
 |-----|-------|------------|
-| GDPR | 100/8 | 1250% |
-| CCPA | 100/6 | 1667% |
+| GDPR | 8/8 | 100% |
+| CCPA | 6/6 | 100% |
 
 ## Expert Reviews
 
