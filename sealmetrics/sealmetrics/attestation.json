@@ -1,0 +1,50 @@
+{
+  "$complyVersion": "1.1",
+  "slug": "sealmetrics",
+  "name": "Seal Metrics",
+  "category": "Analytics & BI",
+  "subcategory": "Web Analytics",
+  "description": "Get 100% real, legal, consentless analytics data. Stop making decisions with broken GA4 data. Sealmetrics gives you complete attribution without cookies or consent banners.",
+  "website": "https://sealmetrics.com",
+  "privacyPolicyUrl": "https://www.esfera-group.com/privacy",
+  "trustCenterUrl": null,
+  "dpaUrl": "https://sealmetrics.com/dpa/",
+  "securityPageUrl": null,
+  "certifications": [],
+  "frameworks": [
+    "GDPR"
+  ],
+  "gdprCompliant": false,
+  "ccpaCompliant": false,
+  "hipaaCompliant": null,
+  "dataLocations": [
+    "EU",
+    "Ireland"
+  ],
+  "hasEuDataCenter": true,
+  "subprocessors": [],
+  "transferSafeguards": "No international transfers — EU-only processing",
+  "supportsDsars": true,
+  "hasDesignatedDpo": true,
+  "hasRecentBreach": false,
+  "encryptionAtRest": null,
+  "encryptionInTransit": null,
+  "penTestFrequency": null,
+  "breachNotificationDays": null,
+  "dataRetentionPolicy": null,
+  "privacyTechnologies": [],
+  "euAiActCompliant": null,
+  "aiCapabilities": [],
+  "aiTechniques": [],
+  "euAiActRole": null,
+  "iso42001Certified": null,
+  "aiDisclosure": {
+    "status": "none",
+    "transparencyLevel": "n/a",
+    "models": []
+  },
+  "transparencyScore": 50,
+  "dpaAnalysis": null,
+  "expertReviews": [],
+  "generated": "2026-05-01"
+}
