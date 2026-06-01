@@ -7,7 +7,7 @@ status: "Expert-Verified"
 jurisdictions: ["EU", "CA", "US"]
 transparencyScore: 80
 dpaComplianceScore: 100
-generated: "2026-05-01"
+generated: "2026-06-01"
 ---
 
 # Conductrics
@@ -62,8 +62,8 @@ Privacy-first A/B testing and adaptive targeting platform operating as a data pr
 
 | Law | Score | Percentage |
 |-----|-------|------------|
-| GDPR | 100/8 | 1250% |
-| CCPA | 100/6 | 1667% |
+| GDPR | 8/8 | 100% |
+| CCPA | 6/6 | 100% |
 
 ## Expert Reviews
 
@@ -74,6 +74,6 @@ Conductrics provides privacy-focused A/B testing and experimentation. Data proce
 
 ---
 
-*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-05-01.*
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-06-01.*
 
 *[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

@@ -7,7 +7,7 @@ status: "Self-Reported"
 jurisdictions: ["EU"]
 transparencyScore: 60
 
-generated: "2026-05-01"
+generated: "2026-06-01"
 ---
 
 # Clientify
@@ -67,6 +67,6 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 ---
 
-*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-05-01.*
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-06-01.*
 
 *[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

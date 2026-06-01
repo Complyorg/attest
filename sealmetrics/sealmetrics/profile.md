@@ -7,7 +7,7 @@ status: "Self-Reported"
 jurisdictions: []
 transparencyScore: 50
 
-generated: "2026-05-01"
+generated: "2026-06-01"
 ---
 
 # Seal Metrics
@@ -42,6 +42,6 @@ Get 100% real, legal, consentless analytics data. Stop making decisions with bro
 
 ---
 
-*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-05-01.*
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-06-01.*
 
 *[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
