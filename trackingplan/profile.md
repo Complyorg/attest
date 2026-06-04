@@ -52,6 +52,10 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 - Transparency Level: **Opaque**
 - AI models not disclosed
 
+## International Data Transfers
+
+No international transfers — EU-only processing
+
 ## Expert Reviews
 
 ### EXP-2026-SM02 (Legal) — 2026-03-06 (vendor.watch)

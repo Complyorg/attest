@@ -53,6 +53,10 @@ Get 100% real, legal, consentless analytics data. Stop making decisions with bro
 
 This vendor does not use artificial intelligence.
 
+## International Data Transfers
+
+No international transfers — EU-only processing
+
 ## Expert Reviews
 
 ### EXP-2026-SM01 (Legal) — 2026-03-06 (vendor.watch)

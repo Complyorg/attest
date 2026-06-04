@@ -65,6 +65,10 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 | ACV Asesores | Tax & accounting | Spain |
 | Masalbe Servicios Globales, SL | External DPO services | Spain |
 
+## International Data Transfers
+
+EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (SCCs) where applicable; Transfer Impact Assessments performed.
+
 ---
 
 *Generated 2026-06-04.*

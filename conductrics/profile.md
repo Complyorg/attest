@@ -60,6 +60,10 @@ Privacy-first A/B testing and adaptive targeting platform operating as a data pr
 | Q-Learning Decision Engine | Custom ML | — | minimal | No |
 | Decision Tree Classifier | Custom ML | — | minimal | No |
 
+## International Data Transfers
+
+SCCs
+
 ## Expert Reviews
 
 ### EXP-2026-SM03 (Legal) — 2026-03-06 (vendor.watch)
