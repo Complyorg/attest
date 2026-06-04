@@ -232,7 +232,7 @@ function generateHtml(data) {
   if (data.encryptionInTransit) securityItems.push(`<li><span class="check-yes">&#x2713;</span> Encryption in transit</li>`);
   if (data.penTestFrequency) securityItems.push(`<li><span class="check-yes">&#x2713;</span> Penetration testing: ${esc(data.penTestFrequency)}</li>`);
   if (data.breachNotificationDays != null) {
-    securityItems.push(`<li><span class="check-yes">&#x2713;</span> Breach notification: ${data.breachNotificationDays} days</li>`);
+    securityItems.push(`<li><span class="check-yes">&#x2713;</span> Breach notification: ${data.breachNotificationDays} hours</li>`);
   } else if (data.hasRecentBreach === false) {
     securityItems.push(`<li><span class="check-yes">&#x2713;</span> No recent breaches reported</li>`);
   }
@@ -512,7 +512,7 @@ ${dpa ? `- DPA Compliance Score: ${dpa.overallScore}%` : ""}
   if (data.encryptionAtRest) md += `- Encryption at rest\n`;
   if (data.encryptionInTransit) md += `- Encryption in transit\n`;
   if (data.penTestFrequency) md += `- Penetration testing: ${data.penTestFrequency}\n`;
-  if (data.breachNotificationDays != null) md += `- Breach notification: ${data.breachNotificationDays} days\n`;
+  if (data.breachNotificationDays != null) md += `- Breach notification: ${data.breachNotificationDays} hours\n`;
   if (data.privacyTechnologies?.length > 0) {
     md += `\n### Privacy Enhancing Measures\n\n`;
     for (const tech of data.privacyTechnologies) md += `- ${tech}\n`;
