@@ -8,7 +8,7 @@
   "website": "https://www.trackingplan.com",
   "privacyPolicyUrl": "https://www.trackingplan.com/privacy-policy",
   "trustCenterUrl": null,
-  "dpaUrl": null,
+  "dpaUrl": "https://attest.comply.org/dpa/trackingplan.pdf",
   "securityPageUrl": null,
   "certifications": [],
   "frameworks": [
@@ -53,7 +53,7 @@
     "transparencyLevel": "opaque",
     "models": []
   },
-  "transparencyScore": 50,
+  "transparencyScore": 60,
   "dpaAnalysis": null,
   "expertReviews": [
     {
