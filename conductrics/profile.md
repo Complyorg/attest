@@ -35,15 +35,16 @@ Privacy-first A/B testing and adaptive targeting platform operating as a data pr
 
 ## Resources & Safeguards
 
-- Certifications: SOC 2 Type 2
+- SOC 2 Type 2
 - Encryption at rest
 - Encryption in transit
 
 ### Privacy Enhancing Measures
 
-- **De-Identification**: Anonymization
+- Anonymization
+- K-Anonymity
 
-- **DPA**: Upon request
+- [DPA](Upon request)
 - [Privacy Notice](https://www.conductrics.com/./manage#data-privacy)
 - [Trust Center](https://attest.comply.org/conductrics/)
 - [Website](https://www.conductrics.com)
@@ -61,13 +62,13 @@ Privacy-first A/B testing and adaptive targeting platform operating as a data pr
 
 ## Expert Reviews
 
-### EXP-2026-SM03 (Legal) — 2026-03-06
+### EXP-2026-SM03 (Legal) — 2026-03-06 (vendor.watch)
 
 Conductrics provides privacy-focused A/B testing and experimentation. Data processing is available in both EU and US regions via Google Cloud Platform and Amazon Web Services. Conductrics applies anonymization and K-Anonymity techniques to protect individual-level data. They encrypt data at rest and in transit, and have a comprehensive DPA covering all GDPR and CCPA required clauses at 100%. All six core principles are verified.
 
 
 ---
 
-*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-06-04.*
+*Generated 2026-06-04.*
 
-*[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
