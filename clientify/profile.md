@@ -7,7 +7,7 @@ status: "Self-Reported"
 jurisdictions: ["EU"]
 transparencyScore: 60
 
-generated: "2026-04-12"
+generated: "2026-06-04"
 ---
 
 # Clientify
@@ -35,7 +35,7 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 ## Resources & Safeguards
 
-- ISO 27001
+- Certifications: ISO 27001
 
 - [Privacy Notice](https://clientify.com/politicas-de-privacidad)
 - [Security Page](https://clientify.com/wp-content/uploads/2024/12/SGSI-PSI-01._Politica_de_Seguridad_de_la_Informacion-4921308.pdf)
@@ -67,6 +67,6 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 ---
 
-*Generated 2026-04-12.*
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-06-04.*
 
-*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
