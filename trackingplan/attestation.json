@@ -46,7 +46,7 @@
     "Generative AI",
     "Statistical"
   ],
-  "euAiActRole": null,
+  "euAiActRole": "Provider",
   "iso42001Certified": null,
   "aiDisclosure": {
     "status": "undisclosed",
