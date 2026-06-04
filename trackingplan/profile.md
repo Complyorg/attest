@@ -7,7 +7,7 @@ status: "Expert-Verified"
 jurisdictions: []
 transparencyScore: 50
 
-generated: "2026-04-12"
+generated: "2026-06-04"
 ---
 
 # Trackingplan
@@ -20,7 +20,7 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 - Transparency Score: 50%
 
-- Designated DPO: Yes
+- Designated DPO: No
 
 ## Core Principles
 
@@ -38,28 +38,29 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 - Encryption at rest
 - Encryption in transit
 - Penetration testing: annually
-- Breach notification: 72 days
+- Breach notification: 72 hours
 
 ### Privacy Enhancing Measures
 
-- Anonymization
+- **De-Identification**: Anonymization
 
 - [Privacy Notice](https://www.trackingplan.com/privacy-policy)
 - [Website](https://www.trackingplan.com)
 
 ## AI Disclosure
 
-This vendor does not use artificial intelligence.
+- Transparency Level: **Opaque**
+- AI models not disclosed
 
 ## Expert Reviews
 
-### EXP-2026-SM02 (Legal) — 2026-03-06 (vendor.watch)
+### EXP-2026-SM02 (Legal) — 2026-03-06
 
 Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is fully EU-based via AWS Ireland. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure provider Amazon Web Services. Trackingplan applies anonymization techniques, encrypts data at rest and in transit, and has a comprehensive DPA covering all required clauses. All six core principles are verified.
 
 
 ---
 
-*Generated 2026-04-12.*
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-06-04.*
 
-*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
