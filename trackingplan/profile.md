@@ -38,7 +38,7 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 - Encryption at rest
 - Encryption in transit
 - Penetration testing: annually
-- Breach notification: 72 days
+- Breach notification: 72 hours
 
 ### Privacy Enhancing Measures
 
