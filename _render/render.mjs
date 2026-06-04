@@ -311,6 +311,13 @@ function generateHtml(data) {
   </table>`;
   }
 
+  // International data transfers
+  let transfersHtml = "";
+  if (data.transferSafeguards) {
+    transfersHtml = `<h2 id="transfers">International Data Transfers</h2>
+  <p>${esc(data.transferSafeguards)}</p>`;
+  }
+
   // Expert reviews
   let reviewsHtml = "";
   if (hasExpertReviews) {
@@ -429,6 +436,7 @@ function generateHtml(data) {
     ${hasAiDisclosureContent(data) ? '<a href="#ai-disclosure">AI Disclosure</a>' : ""}
     ${dpa ? '<a href="#dpa">DPA Analysis</a>' : ""}
     ${subs.length > 0 ? '<a href="#subprocessors">Subprocessors</a>' : ""}
+    ${data.transferSafeguards ? '<a href="#transfers">Transfers</a>' : ""}
     ${hasExpertReviews ? '<a href="#reviews">Reviews</a>' : ""}
   </div>
 
@@ -445,6 +453,7 @@ function generateHtml(data) {
 
   ${dpaHtml}
   ${subsHtml}
+  ${transfersHtml}
   ${reviewsHtml}
 
   <div class="footer">
@@ -544,6 +553,10 @@ ${dpa ? `- DPA Compliance Score: ${dpa.overallScore}%` : ""}
   if (subs.length > 0) {
     md += `\n## Subprocessors\n\n| Name | Purpose | Location |\n|------|---------|----------|\n`;
     md += subs.map((s) => `| ${s.name} | ${s.purpose} | ${s.location ?? "—"} |`).join("\n") + "\n";
+  }
+
+  if (data.transferSafeguards) {
+    md += `\n## International Data Transfers\n\n${data.transferSafeguards}\n`;
   }
 
   if (hasExpertReviews) {
