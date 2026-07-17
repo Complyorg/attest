@@ -43,9 +43,10 @@
   "encryptionInTransit": true,
   "penTestFrequency": "annually",
   "breachNotificationDays": 72,
-  "dataRetentionPolicy": "Data retained for contract duration, deleted upon termination",
+  "dataRetentionPolicy": "Automatically delete after 90-days retention period.",
   "privacyTechnologies": [
-    "Anonymization"
+    "Anonymization",
+    "Data Masking"
   ],
   "euAiActCompliant": null,
   "aiCapabilities": [
