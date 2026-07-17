@@ -2,6 +2,7 @@
   "$complyVersion": "1.1",
   "slug": "trackingplan",
   "name": "Trackingplan",
+  "legalName": "Trackingplan Europe SL",
   "category": "Analytics & BI",
   "subcategory": "Web Analytics",
   "description": "Automatically detect what's affecting your digital analytics, maintain up-to-date tracking plans, and foster seamless collaboration with Trackingplan.",
@@ -19,10 +20,21 @@
   "hipaaCompliant": null,
   "dataLocations": [
     "EU",
-    "Ireland"
+    "Germany"
   ],
   "hasEuDataCenter": true,
-  "subprocessors": [],
+  "subprocessors": [
+    {
+      "name": "Amazon Web Services S.A.R.L.",
+      "purpose": "Cloud infrastructure hosting (compute, storage, networking) and AI model inference via AWS Bedrock (Anthropic Claude models)",
+      "location": "Frankfurt, Germany"
+    },
+    {
+      "name": "ClickHouse, Inc.",
+      "purpose": "Analytical database services",
+      "location": "Frankfurt, Germany"
+    }
+  ],
   "transferSafeguards": "No international transfers — EU-only processing",
   "supportsDsars": true,
   "hasDesignatedDpo": false,
@@ -49,11 +61,19 @@
   "euAiActRole": "Provider",
   "iso42001Certified": null,
   "aiDisclosure": {
-    "status": "undisclosed",
-    "transparencyLevel": "opaque",
-    "models": []
+    "status": "disclosed",
+    "transparencyLevel": "transparent",
+    "models": [
+      {
+        "name": "Claude",
+        "type": "LLM",
+        "provider": "Anthropic",
+        "euAiActRiskTier": null,
+        "isOpenSource": null
+      }
+    ]
   },
-  "transparencyScore": 60,
+  "transparencyScore": 80,
   "dpaAnalysis": null,
   "expertReviews": [
     {
@@ -91,5 +111,5 @@
       }
     }
   ],
-  "generated": "2026-06-04"
+  "generated": "2026-07-17"
 }

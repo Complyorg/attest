@@ -420,6 +420,7 @@ function generateHtml(data) {
   </div>
   <div style="margin-bottom:1.5rem">
     <h1>${esc(data.name)}</h1>
+    ${data.legalName ? `<div class="subtitle" style="margin-top:0.25rem">Legal entity: ${esc(data.legalName)}</div>` : ""}
     <div class="header-meta">
       <span class="badge ${statusBadgeClass}">${statusLabel}</span>
       <span class="subtitle">${esc(data.category)}${data.subcategory ? ` / ${esc(data.subcategory)}` : ""}</span>
