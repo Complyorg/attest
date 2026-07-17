@@ -43,6 +43,7 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 ### Privacy Enhancing Measures
 
 - Anonymization
+- Data Masking
 
 - [DPA](https://attest.comply.org/dpa/trackingplan.pdf)
 - [Privacy Notice](https://www.trackingplan.com/privacy-policy)
