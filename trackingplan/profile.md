@@ -5,9 +5,9 @@ category: "Analytics & BI"
 subcategory: "Web Analytics"
 status: "Expert-Verified"
 jurisdictions: []
-transparencyScore: 60
+transparencyScore: 80
 
-generated: "2026-06-04"
+generated: "2026-07-17"
 ---
 
 # Trackingplan
@@ -18,7 +18,7 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 ## Summary
 
-- Transparency Score: 60%
+- Transparency Score: 80%
 
 - Designated DPO: No
 
@@ -50,8 +50,18 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 ## AI Disclosure
 
-- Transparency Level: **Opaque**
-- AI models not disclosed
+- Transparency Level: **Transparent**
+
+| Model | Type | Provider | EU AI Act Risk | Open Source |
+|-------|------|----------|----------------|-------------|
+| Claude | LLM | Anthropic | — | — |
+
+## Subprocessors
+
+| Name | Purpose | Location |
+|------|---------|----------|
+| Amazon Web Services S.A.R.L. | Cloud infrastructure hosting (compute, storage, networking) and AI model inference via AWS Bedrock (Anthropic Claude models) | Frankfurt, Germany |
+| ClickHouse, Inc. | Analytical database services | Frankfurt, Germany |
 
 ## International Data Transfers
 
@@ -66,6 +76,6 @@ Trackingplan provides automated data quality monitoring for analytics implementa
 
 ---
 
-*Generated 2026-06-04.*
+*Generated 2026-07-17.*
 
 *[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
