@@ -7,7 +7,7 @@ status: "Expert-Verified"
 jurisdictions: []
 transparencyScore: 60
 
-generated: "2026-06-04"
+generated: "2026-07-17"
 ---
 
 # Seal Metrics
@@ -66,6 +66,6 @@ Seal Metrics provides cookieless, consent-free web analytics by design. Their ar
 
 ---
 
-*Generated 2026-06-04.*
+*Generated 2026-07-17.*
 
-*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

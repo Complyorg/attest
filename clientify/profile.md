@@ -1,18 +1,18 @@
 ---
 slug: clientify
 name: "Clientify"
-category: "Marketing & Sales"
+category: "CRM & Sales"
 subcategory: "CRM & Marketing Automation"
 status: "Self-Reported"
 jurisdictions: ["EU"]
 transparencyScore: 60
 
-generated: "2026-06-04"
+generated: "2026-07-17"
 ---
 
 # Clientify
 
-**Marketing & Sales** / CRM & Marketing Automation | Self-Reported | EU
+**CRM & Sales** / CRM & Marketing Automation | Self-Reported | EU
 
 All-in-one CRM, marketing automation and omnichannel communications platform for SMBs, with WhatsApp, Instagram, email, telephony and live chat. Bundles sales pipelines, lead scoring, automations, landing pages, e-signature and AI-assisted features.
 
@@ -71,6 +71,6 @@ EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (
 
 ---
 
-*Generated 2026-06-04.*
+*Generated 2026-07-17.*
 
-*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

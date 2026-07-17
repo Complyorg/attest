@@ -70,13 +70,13 @@ No international transfers — EU-only processing
 
 ## Expert Reviews
 
-### EXP-2026-SM02 (Legal) — 2026-03-06 (vendor.watch)
+### EXP-2026-SM02 (Legal) — 2026-07-17 (vendor.watch)
 
-Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is fully EU-based via AWS Ireland. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure provider Amazon Web Services. Trackingplan applies anonymization techniques, encrypts data at rest and in transit, and has a comprehensive DPA covering all required clauses. All six core principles are verified.
+Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is fully EU-based via AWS Frankfurt, with analytical database services from ClickHouse also hosted in Frankfurt. AI-assisted features run on Anthropic Claude models via AWS Bedrock in the same EU region and are disclosed in the vendor's AI transparency section. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure provider Amazon Web Services. Trackingplan applies anonymization techniques, encrypts data at rest and in transit, and has a comprehensive DPA covering all required clauses. All six core principles are verified. (Refreshed July 2026 to reflect the vendor's migration from AWS Ireland to AWS Frankfurt and its AI model disclosure.)
 
 
 ---
 
 *Generated 2026-07-17.*
 
-*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

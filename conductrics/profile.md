@@ -7,7 +7,7 @@ status: "Expert-Verified"
 jurisdictions: ["EU", "CA", "US"]
 transparencyScore: 90
 
-generated: "2026-06-04"
+generated: "2026-07-17"
 ---
 
 # Conductrics
@@ -44,7 +44,7 @@ Privacy-first A/B testing and adaptive targeting platform operating as a data pr
 - Anonymization
 - K-Anonymity
 
-- [DPA](Upon request)
+- **DPA**: Available upon request
 - [Privacy Notice](https://www.conductrics.com/./manage#data-privacy)
 - [Trust Center](https://attest.comply.org/conductrics/)
 - [Website](https://www.conductrics.com)
@@ -73,6 +73,6 @@ Conductrics provides privacy-focused A/B testing and experimentation. Data proce
 
 ---
 
-*Generated 2026-06-04.*
+*Generated 2026-07-17.*
 
-*[Comply.org Attestation Standard v1.1](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
