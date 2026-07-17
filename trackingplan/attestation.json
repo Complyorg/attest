@@ -1,5 +1,5 @@
 {
-  "$complyVersion": "1.1",
+  "$complyVersion": "1.2",
   "slug": "trackingplan",
   "name": "Trackingplan",
   "legalName": "Trackingplan Europe SL",
@@ -10,6 +10,7 @@
   "privacyPolicyUrl": "https://www.trackingplan.com/privacy-policy",
   "trustCenterUrl": null,
   "dpaUrl": "https://attest.comply.org/dpa/trackingplan.pdf",
+  "dpaAvailability": "public",
   "securityPageUrl": null,
   "certifications": [],
   "frameworks": [
@@ -82,8 +83,8 @@
       "issuingPlatform": "vendor.watch",
       "issuingPlatformUrl": "https://vendor.watch/verify/EXP-2026-SM02",
       "expertType": "legal",
-      "completedAt": "2026-03-06T00:00:00.000Z",
-      "summaryReport": "Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is fully EU-based via AWS Ireland. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure provider Amazon Web Services. Trackingplan applies anonymization techniques, encrypts data at rest and in transit, and has a comprehensive DPA covering all required clauses. All six core principles are verified.",
+      "completedAt": "2026-07-17T19:32:34.847Z",
+      "summaryReport": "Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is fully EU-based via AWS Frankfurt, with analytical database services from ClickHouse also hosted in Frankfurt. AI-assisted features run on Anthropic Claude models via AWS Bedrock in the same EU region and are disclosed in the vendor's AI transparency section. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure provider Amazon Web Services. Trackingplan applies anonymization techniques, encrypts data at rest and in transit, and has a comprehensive DPA covering all required clauses. All six core principles are verified. (Refreshed July 2026 to reflect the vendor's migration from AWS Ireland to AWS Frankfurt and its AI model disclosure.)",
       "principles": {
         "transparency": {
           "status": "verified",
@@ -99,7 +100,7 @@
         },
         "security": {
           "status": "verified",
-          "notes": "Encryption at rest and in transit. Annual penetration testing. EU-only data processing via AWS Ireland. ISO 27001 and SOC 2 inherited from subprocessor."
+          "notes": "Encryption at rest and in transit. Annual penetration testing. EU-only data processing via AWS Frankfurt. ISO 27001 and SOC 2 inherited from subprocessor."
         },
         "quality": {
           "status": "verified",

@@ -259,8 +259,9 @@ function generateHtml(data) {
   }
   resources += `</div>`;
 
+  const dpaResource = data.dpaUrl || (data.dpaAvailability === "upon-request" ? "Available upon request" : null);
   const linkResources = [
-    ["DPA", data.dpaUrl],
+    ["DPA", dpaResource],
     ["Privacy Notice", data.privacyPolicyUrl],
     ["Trust Center", data.trustCenterUrl],
     ["Security Page", data.securityPageUrl],
@@ -268,7 +269,9 @@ function generateHtml(data) {
   if (linkResources.length > 0) {
     resources += `<div style="margin-top:0.75rem">`;
     for (const [label, url] of linkResources) {
-      resources += `<div class="row"><span class="row-label">${label}</span><a href="${esc(url)}" rel="noopener">${esc(url)}</a></div>`;
+      resources += url.startsWith("http")
+        ? `<div class="row"><span class="row-label">${label}</span><a href="${esc(url)}" rel="noopener">${esc(url)}</a></div>`
+        : `<div class="row"><span class="row-label">${label}</span><span class="row-value">${esc(url)}</span></div>`;
     }
     resources += `</div>`;
   }
@@ -529,14 +532,14 @@ ${dpa ? `- DPA Compliance Score: ${dpa.overallScore}%` : ""}
   }
 
   const links = [
-    ["DPA", data.dpaUrl],
+    ["DPA", data.dpaUrl || (data.dpaAvailability === "upon-request" ? "Available upon request" : null)],
     ["Privacy Notice", data.privacyPolicyUrl],
     ["Trust Center", data.trustCenterUrl],
     ["Security Page", data.securityPageUrl],
     ["Website", data.website],
   ].filter(([, url]) => url);
   if (links.length > 0) {
-    md += `\n${links.map(([label, url]) => `- [${label}](${url})`).join("\n")}\n`;
+    md += `\n${links.map(([label, url]) => url.startsWith("http") ? `- [${label}](${url})` : `- **${label}**: ${url}`).join("\n")}\n`;
   }
 
   md += renderAiDisclosureMd(data);

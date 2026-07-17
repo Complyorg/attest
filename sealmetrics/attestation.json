@@ -1,7 +1,8 @@
 {
-  "$complyVersion": "1.1",
+  "$complyVersion": "1.2",
   "slug": "sealmetrics",
   "name": "Seal Metrics",
+  "legalName": null,
   "category": "Analytics & BI",
   "subcategory": "Web Analytics",
   "description": "Get 100% real, legal, consentless analytics data. Stop making decisions with broken GA4 data. Sealmetrics gives you complete attribution without cookies or consent banners.",
@@ -9,6 +10,7 @@
   "privacyPolicyUrl": "https://www.esfera-group.com/privacy",
   "trustCenterUrl": null,
   "dpaUrl": "https://attest.comply.org/dpa/sealmetrics.pdf",
+  "dpaAvailability": "public",
   "securityPageUrl": null,
   "certifications": [],
   "frameworks": [
@@ -84,5 +86,5 @@
       }
     }
   ],
-  "generated": "2026-06-04"
+  "generated": "2026-07-17"
 }

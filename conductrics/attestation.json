@@ -1,14 +1,16 @@
 {
-  "$complyVersion": "1.1",
+  "$complyVersion": "1.2",
   "slug": "conductrics",
   "name": "Conductrics",
+  "legalName": null,
   "category": "Personalization & Engagement",
   "subcategory": "A/B Testing",
   "description": "Privacy-first A/B testing and adaptive targeting platform operating as a data processor with consent-exempt analytics configurations.",
   "website": "https://www.conductrics.com",
   "privacyPolicyUrl": "https://www.conductrics.com/./manage#data-privacy",
   "trustCenterUrl": "https://attest.comply.org/conductrics/",
-  "dpaUrl": "Upon request",
+  "dpaUrl": null,
+  "dpaAvailability": "upon-request",
   "securityPageUrl": null,
   "certifications": [
     "SOC 2 Type 2"
@@ -125,5 +127,5 @@
       }
     }
   ],
-  "generated": "2026-06-04"
+  "generated": "2026-07-17"
 }
