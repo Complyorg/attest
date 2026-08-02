@@ -1,16 +1,19 @@
 ---
 slug: trackingplan
 name: "Trackingplan"
+legalName: "Trackingplan Europe SL"
 category: "Analytics & BI"
 subcategory: "Web Analytics"
 status: "Expert-Verified"
 jurisdictions: []
-transparencyScore: 80
-
-generated: "2026-07-17"
+transparencyScore: 90
+dpaComplianceScore: 70
+generated: "2026-08-02"
 ---
 
 # Trackingplan
+
+_Legal entity: Trackingplan Europe SL_
 
 **Analytics & BI** / Web Analytics | Expert-Verified
 
@@ -18,8 +21,8 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 ## Summary
 
-- Transparency Score: 80%
-
+- Transparency Score: 90%
+- DPA Compliance Score: 70%
 - Designated DPO: No
 
 ## Core Principles
@@ -42,11 +45,12 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 ### Privacy Enhancing Measures
 
-- Anonymization
-- Data Masking
+- **De-Identification**: Data Masking, Anonymization
 
 - [DPA](https://attest.comply.org/dpa/trackingplan.pdf)
 - [Privacy Notice](https://www.trackingplan.com/privacy-policy)
+- [Trust Center](https://www.trackingplan.com/privacy-hub)
+- [Security Page](https://www.trackingplan.com/docs/privacy-and-security)
 - [Website](https://www.trackingplan.com)
 
 ## AI Disclosure
@@ -56,6 +60,14 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 | Model | Type | Provider | EU AI Act Risk | Open Source |
 |-------|------|----------|----------------|-------------|
 | Claude | LLM | Anthropic | — | — |
+| GPT | LLM | OpenAI | — | — |
+
+## DPA Compliance Analysis
+
+| Law | Score | Percentage |
+|-----|-------|------------|
+| GDPR | 7/8 | 88% |
+| CCPA | 2/6 | 33% |
 
 ## Subprocessors
 
@@ -63,6 +75,8 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 |------|---------|----------|
 | Amazon Web Services S.A.R.L. | Cloud infrastructure hosting (compute, storage, networking) and AI model inference via AWS Bedrock (Anthropic Claude models) | Frankfurt, Germany |
 | ClickHouse, Inc. | Analytical database services | Frankfurt, Germany |
+| Cloudflare | Edge network for data ingestion | User region |
+| Microsoft Azure | AI/LLM model inference via Microsoft Azure AI Foundry (OpenAI GPT models) | EUR Data Zone |
 
 ## International Data Transfers
 
@@ -70,13 +84,13 @@ No international transfers — EU-only processing
 
 ## Expert Reviews
 
-### EXP-2026-SM02 (Legal) — 2026-07-17 (vendor.watch)
+### EXP-2026-SM02 (Legal) — 2026-08-02
 
-Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is fully EU-based via AWS Frankfurt, with analytical database services from ClickHouse also hosted in Frankfurt. AI-assisted features run on Anthropic Claude models via AWS Bedrock in the same EU region and are disclosed in the vendor's AI transparency section. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure provider Amazon Web Services. Trackingplan applies anonymization techniques, encrypts data at rest and in transit, and has a comprehensive DPA covering all required clauses. All six core principles are verified. (Refreshed July 2026 to reflect the vendor's migration from AWS Ireland to AWS Frankfurt and its AI model disclosure.)
+Trackingplan provides automated data quality monitoring for analytics implementations. Data processing is EU-based via AWS Frankfurt, with analytical database services from ClickHouse also hosted in Frankfurt and edge data ingestion on Cloudflare's network in the user's region. AI-assisted features run on Anthropic Claude models via AWS Bedrock (Frankfurt) and OpenAI GPT models via Microsoft Azure AI Foundry (EUR Data Zone), all disclosed in the vendor's AI transparency section. While they do not hold ISO 27001 or SOC 2 certifications directly, these are inherited from their infrastructure providers. Trackingplan applies anonymization and data masking, encrypts data at rest and in transit, and a clause-by-clause analysis of its DPA is published on this page; the vendor has added CCPA to its claimed frameworks, and a revised DPA closing the remaining CCPA clause gaps is under review. All six core principles are verified. (Refreshed August 2026 to reflect the new Cloudflare and Microsoft Azure subprocessors, the expanded AI model disclosure, and the published DPA analysis.)
 
 
 ---
 
-*Generated 2026-07-17.*
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-08-02.*
 
-*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.1](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
