@@ -95,9 +95,9 @@
   },
   "transparencyScore": 90,
   "dpaAnalysis": {
-    "overallScore": 70,
+    "overallScore": 92,
     "gdpr": {
-      "score": 88,
+      "score": 100,
       "total": 8,
       "clauses": [
         {
@@ -106,7 +106,7 @@
           "found": true,
           "label": "Process only on documented instructions",
           "article": "Art. 28(3)(a)",
-          "matchedText": "…the Data Controller, Trackingplan Inc. shall: Process the personal data only on documented instructions from the Data Controller, including with regard to transfers of personal data t…"
+          "matchedText": "…G I N S T R U C T I O N S 4.1 The Processor shall process Personal Data only on documented instructions from the Controller, including with regard to transfers of Personal Data to a t…"
         },
         {
           "id": "gdpr_confidentiality",
@@ -114,7 +114,7 @@
           "found": true,
           "label": "Confidentiality obligation",
           "article": "Art. 28(3)(b)",
-          "matchedText": "…Inc. has developed information security risk management policies to reasonably ensure the confidentiality, integrity, and availability of the data processed by the Product. These include sub-processo"
+          "matchedText": "…ays’ prior written notice, during normal business hours, subject to appropriate confidentiality undertakings and with minimal disruption to the Processor’s operations. Each party bears it…"
         },
         {
           "id": "gdpr_security",
@@ -122,7 +122,7 @@
           "found": true,
           "label": "Technical & organizational measures",
           "article": "Art. 28(3)(c)",
-          "matchedText": "…tutory obligation of confidentiality; Assist the Data Controller by appropriate technical and organizational measures, insofar as this is possible, for the fulfillment of its obligation to respond…"
+          "matchedText": "…N A L M E A S U R E S Measures implemented by the Processor in accordance with Article 32 GDPR. 1. Encryption. All Personal Data transmitted over public networks is encr…"
         },
         {
           "id": "gdpr_subprocessor",
@@ -130,7 +130,7 @@
           "found": true,
           "label": "Sub-processor conditions",
           "article": "Art. 28(3)(d)",
-          "matchedText": "…integrity, and availability of the data processed by the Product. These include sub-processor audits (see Sub-processors for further details), certifications, infrastructure…"
+          "matchedText": "…ludes “service provider”, and “Personal Data” includes “personal information”. “Sub-processor” means any third party engaged by the Processor to process Personal Data on beh…"
         },
         {
           "id": "gdpr_data_subject",
@@ -138,14 +138,15 @@
           "found": true,
           "label": "Data subject rights assistance",
           "article": "Art. 28(3)(e)",
-          "matchedText": "…he Data Controller for the performance of that other processor's obligations.  Data Subject Rights To the extent that Trackingplan Inc. is processing personal data on behalf of t…"
+          "matchedText": "…H T S 8.1 Taking into account the nature of the Processing, the Processor shall assist the Controller by appropriate technical and organisational measures, insofar as this is possible, in fulfilling "
         },
         {
           "id": "gdpr_breach_dpia",
           "law": "GDPR",
-          "found": false,
+          "found": true,
           "label": "Breach notification & DPIA assistance",
-          "article": "Art. 28(3)(f)"
+          "article": "Art. 28(3)(f)",
+          "matchedText": "…e notification shall include, insofar as available, the information required by Article 33(3) GDPR: the nature of the breach, the categories and approximate number of Dat…"
         },
         {
           "id": "gdpr_deletion",
@@ -153,7 +154,7 @@
           "found": true,
           "label": "Deletion/return of data",
           "article": "Art. 28(3)(g)",
-          "matchedText": "…t's rights laid down in the Privacy Laws; At the choice of the Data Controller, delete or return all the personal data to the Data Controller after the end of the provision of services relating to pr"
+          "matchedText": "…uring the term, stored analytics payload data is automatically and irreversibly deleted under the Processor’s retention policy (90-day time-to-live), as described in Annex I; the Controller may reque"
         },
         {
           "id": "gdpr_audit",
@@ -161,12 +162,12 @@
           "found": true,
           "label": "Audit rights",
           "article": "Art. 28(3)(h)",
-          "matchedText": "…availability of the data processed by the Product. These include sub-processor audits (see Sub-processors for further details), certifications, infrastructure, availability and disaster resistance, t"
+          "matchedText": "…onses to reasonable written security questionnaires. 11.2 The Controller (or an auditor mandated by it that is not a competitor of the Processor) may conduct audits, including inspections, no more th"
         }
       ]
     },
     "ccpa": {
-      "score": 33,
+      "score": 100,
       "total": 6,
       "clauses": [
         {
@@ -175,21 +176,23 @@
           "found": true,
           "label": "Purpose limitation",
           "article": "CCPA §1798.140(ag)",
-          "matchedText": "…til disposal of the personal data in accordance with such terms. The nature and purpose of the processing is in connection with the provision of the services. The types of personal data processed are"
+          "matchedText": "…S C O P E O F P R O C E S S I N G 2.1 The subject matter, duration, nature and purpose of the Processing, the categories of Personal Data and the categories of Data Subjects are described in Annex I."
         },
         {
           "id": "ccpa_no_sell",
           "law": "CCPA",
-          "found": false,
+          "found": true,
           "label": "No selling/sharing",
-          "article": "CCPA §1798.100(d)"
+          "article": "CCPA §1798.100(d)",
+          "matchedText": "…o the Processing, the Processor, acting as a service provider or processor: (a) shall not sell or share Personal Data; (b) shall not retain, use or disclose Personal Data for…"
         },
         {
           "id": "ccpa_no_combine",
           "law": "CCPA",
-          "found": false,
+          "found": true,
           "label": "No combining data",
-          "article": "CCPA §1798.140(ag)(1)"
+          "article": "CCPA §1798.140(ag)(1)",
+          "matchedText": "…hip between the parties, except as permitted by Data Protection Laws; (c) shall not combine Personal Data received from the Controller with personal information it receive…"
         },
         {
           "id": "ccpa_compliance",
@@ -197,26 +200,28 @@
           "found": true,
           "label": "Compliance with CCPA",
           "article": "CCPA §1798.100",
-          "matchedText": "…egulation (“GDPR”) and/or is subject to the California Privacy Protection Act (“CCPA”).  Definitions “Privacy Laws” means all privacy and data protection laws, rul…"
+          "matchedText": "…Privacy Act of 2018, as amended by the California Privacy Rights Act of 2020 (“CCPA”); (d) other applicable US state privacy laws, including the Virginia Consumer…"
         },
         {
           "id": "ccpa_notify",
           "law": "CCPA",
-          "found": false,
+          "found": true,
           "label": "Right to notify non-compliance",
-          "article": "CCPA §1798.100(d)(3)"
+          "article": "CCPA §1798.100(d)(3)",
+          "matchedText": "…iate steps to stop and remediate any unauthorised use of Personal Data; and (g) certifies that it understands and will comply with the restrictions in this Section. The Processing instruct…"
         },
         {
           "id": "ccpa_grant_audit",
           "law": "CCPA",
-          "found": false,
+          "found": true,
           "label": "Allow compliance assessment",
-          "article": "CCPA §1798.100(d)(4)"
+          "article": "CCPA §1798.100(d)(4)",
+          "matchedText": "…ormation available to it, the Processor shall assist the Controller in ensuring compliance with the Controller’s obligations to carry out data protection impact assessments and, where required, to co"
         }
       ]
     },
     "usState": {
-      "score": 80,
+      "score": 60,
       "total": 5,
       "clauses": [
         {
@@ -232,15 +237,14 @@
           "found": true,
           "label": "Duty of confidentiality",
           "article": "State Processor Laws",
-          "matchedText": "…Inc. has developed information security risk management policies to reasonably ensure the confidentiality, integrity, and availability of the data processed by the Product. These include sub-processo"
+          "matchedText": "…. C O N F I D E N T I A L I T Y A N D P E R S O N N E L 5.1 The Processor shall ensure that access to Personal Data is limited to personnel who need it to provide the Services, and that all such pers"
         },
         {
           "id": "us_delete_return",
           "law": "US_STATE",
-          "found": true,
+          "found": false,
           "label": "Delete or return data",
-          "article": "State Processor Laws",
-          "matchedText": "…t's rights laid down in the Privacy Laws; At the choice of the Data Controller, delete or return all the personal data to the Data Controller after the end of the provision of…"
+          "article": "State Processor Laws"
         },
         {
           "id": "us_sub_contract",
@@ -248,7 +252,7 @@
           "found": true,
           "label": "Sub-contractor requirements",
           "article": "State Processor Laws",
-          "matchedText": "…processors Trackingplan Inc. has the Data Controller’s general authorization to engage other processors for the processing of personal data in accordance with this DPA from the list included in app.c"
+          "matchedText": "…al Data” includes “personal information”. “Sub-processor” means any third party engaged by the Processor to process Personal Data on behalf of the Controller. 2 . S C O P E O F P R O C E S S I N G 2."
         },
         {
           "id": "us_audit_assessment",
@@ -256,7 +260,7 @@
           "found": true,
           "label": "Assessment/audit",
           "article": "State Processor Laws",
-          "matchedText": "…availability of the data processed by the Product. These include sub-processor audits (see Sub-processors for further details), certifications, infrastructure, availability and disaster resistance, t"
+          "matchedText": "…onses to reasonable written security questionnaires. 11.2 The Controller (or an auditor mandated by it that is not a competitor of the Processor) may conduct audits, including inspections, no more th"
         }
       ]
     }
@@ -297,5 +301,5 @@
       }
     }
   ],
-  "generated": "2026-08-02"
+  "generated": "2026-08-04"
 }
