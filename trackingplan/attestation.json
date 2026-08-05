@@ -154,7 +154,7 @@
           "found": true,
           "label": "Deletion/return of data",
           "article": "Art. 28(3)(g)",
-          "matchedText": "…uring the term, stored analytics payload data is automatically and irreversibly deleted under the Processor’s retention policy (90-day time-to-live), as described in Annex I; the Controller may reque"
+          "matchedText": "…uring the term, stored analytics payload data is automatically and irreversibly deleted under the Processor’s retention policy (90-day time-to-live), as described in Annex I. 15.3 Upon termination or"
         },
         {
           "id": "gdpr_audit",
