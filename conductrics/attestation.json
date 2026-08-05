@@ -10,8 +10,8 @@
   "privacyPolicyUrl": "https://www.conductrics.com/./manage#data-privacy",
   "trustCenterUrl": "https://attest.comply.org/conductrics/",
   "dpaUrl": null,
-  "dpaAvailability": "upon-request",
-  "securityPageUrl": null,
+  "dpaAvailability": null,
+  "securityPageUrl": "https://www.conductrics.com/security-and-compliance/",
   "certifications": [
     "SOC 2 Type 2"
   ],
@@ -27,7 +27,18 @@
     "EU"
   ],
   "hasEuDataCenter": true,
-  "subprocessors": [],
+  "subprocessors": [
+    {
+      "name": "Google Cloud Platform",
+      "purpose": "Cloud hosting",
+      "location": "EU"
+    },
+    {
+      "name": "Amazon Web Services",
+      "purpose": "Cloud hosting",
+      "location": "EU"
+    }
+  ],
   "transferSafeguards": "SCCs",
   "supportsDsars": true,
   "hasDesignatedDpo": true,
@@ -127,5 +138,5 @@
       }
     }
   ],
-  "generated": "2026-07-17"
+  "generated": "2026-08-05"
 }
