@@ -2,15 +2,15 @@
   "$complyVersion": "1.2",
   "slug": "conductrics",
   "name": "Conductrics",
-  "legalName": null,
+  "legalName": "Conductrics Inc.",
   "category": "Personalization & Engagement",
   "subcategory": "A/B Testing",
-  "description": "Privacy-first A/B testing and adaptive targeting platform operating as a data processor with consent-exempt analytics configurations.",
+  "description": "A/B testing and adaptive experience optimization platform. Processing is limited to pseudonymous experiment data: a randomly generated first-party visitor identifier, variant assignments and goal events, and low-cardinality traits with no direct identifiers. Analysis runs at variant and cohort level only, with aggregate results released under k-anonymity thresholds; the service is not used to profile or target individual users.",
   "website": "https://www.conductrics.com",
   "privacyPolicyUrl": "https://www.conductrics.com/./manage#data-privacy",
   "trustCenterUrl": "https://attest.comply.org/conductrics/",
   "dpaUrl": null,
-  "dpaAvailability": null,
+  "dpaAvailability": "upon-request",
   "securityPageUrl": "https://www.conductrics.com/security-and-compliance/",
   "certifications": [
     "SOC 2 Type 2"
@@ -30,27 +30,27 @@
   "subprocessors": [
     {
       "name": "Google Cloud Platform",
-      "purpose": "Cloud hosting",
+      "purpose": "Cloud infrastructure hosting; storage of personal data at rest in encrypted form, including encrypted backups",
       "location": "EU"
     },
     {
       "name": "Amazon Web Services",
-      "purpose": "Cloud hosting",
+      "purpose": "Cloud infrastructure hosting; storage of personal data at rest in encrypted form, including encrypted backups",
       "location": "EU"
     }
   ],
-  "transferSafeguards": "SCCs",
+  "transferSafeguards": "SCCs (EU 2021/914, Module Two) with a documented transfer impact assessment; personal data at rest is hosted in EU regions, accessed remotely from the US. Not certified under the EU-US DPF.",
   "supportsDsars": true,
   "hasDesignatedDpo": true,
   "hasRecentBreach": false,
   "encryptionAtRest": true,
   "encryptionInTransit": true,
   "penTestFrequency": null,
-  "breachNotificationDays": null,
-  "dataRetentionPolicy": "Data retained for contract duration, deleted upon termination",
+  "breachNotificationDays": 72,
+  "dataRetentionPolicy": "Personal data is deleted within 90 days of contract termination, including production copies, backups, and archives; encrypted backup media cycle out within 30 days. Deletion is confirmed in writing on request.",
   "privacyTechnologies": [
     "Anonymization",
-    "K-Anonymity"
+    "k-Anonymity"
   ],
   "euAiActCompliant": null,
   "aiCapabilities": [
@@ -100,8 +100,142 @@
       }
     ]
   },
-  "transparencyScore": 90,
-  "dpaAnalysis": null,
+  "transparencyScore": 100,
+  "dpaAnalysis": {
+    "overallScore": 100,
+    "gdpr": {
+      "score": 100,
+      "total": 8,
+      "clauses": [
+        {
+          "key": "gdpr_instructions",
+          "label": "Process only on documented instructions",
+          "found": true,
+          "article": "Art. 28(3)(a)"
+        },
+        {
+          "key": "gdpr_confidentiality",
+          "label": "Confidentiality obligation",
+          "found": true,
+          "article": "Art. 28(3)(b)"
+        },
+        {
+          "key": "gdpr_security",
+          "label": "Technical & organizational measures",
+          "found": true,
+          "article": "Art. 28(3)(c)"
+        },
+        {
+          "key": "gdpr_subprocessor",
+          "label": "Sub-processor conditions",
+          "found": true,
+          "article": "Art. 28(3)(d)"
+        },
+        {
+          "key": "gdpr_data_subject",
+          "label": "Data subject rights assistance",
+          "found": true,
+          "article": "Art. 28(3)(e)"
+        },
+        {
+          "key": "gdpr_breach_dpia",
+          "label": "Breach notification & DPIA assistance",
+          "found": true,
+          "article": "Art. 28(3)(f)"
+        },
+        {
+          "key": "gdpr_deletion",
+          "label": "Deletion/return of data",
+          "found": true,
+          "article": "Art. 28(3)(g)"
+        },
+        {
+          "key": "gdpr_audit",
+          "label": "Audit rights",
+          "found": true,
+          "article": "Art. 28(3)(h)"
+        }
+      ]
+    },
+    "ccpa": {
+      "score": 100,
+      "total": 6,
+      "clauses": [
+        {
+          "key": "ccpa_purpose_limit",
+          "label": "Purpose limitation",
+          "found": true,
+          "article": "CCPA §1798.140(ag)"
+        },
+        {
+          "key": "ccpa_no_sell",
+          "label": "No selling/sharing",
+          "found": true,
+          "article": "CCPA §1798.100(d)"
+        },
+        {
+          "key": "ccpa_no_combine",
+          "label": "No combining data",
+          "found": true,
+          "article": "CCPA §1798.140(ag)(1)"
+        },
+        {
+          "key": "ccpa_compliance",
+          "label": "Compliance with CCPA",
+          "found": true,
+          "article": "CCPA §1798.100"
+        },
+        {
+          "key": "ccpa_notify",
+          "label": "Right to notify non-compliance",
+          "found": true,
+          "article": "CCPA §1798.100(d)(3)"
+        },
+        {
+          "key": "ccpa_grant_audit",
+          "label": "Allow compliance assessment",
+          "found": true,
+          "article": "CCPA §1798.100(d)(4)"
+        }
+      ]
+    },
+    "usState": {
+      "score": 100,
+      "total": 5,
+      "clauses": [
+        {
+          "key": "us_binding_instructions",
+          "label": "Binding instructions",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_duty_of_care",
+          "label": "Duty of confidentiality",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_delete_return",
+          "label": "Delete or return data",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_sub_contract",
+          "label": "Sub-contractor requirements",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_audit_assessment",
+          "label": "Assessment/audit",
+          "found": true,
+          "article": "State Processor Laws"
+        }
+      ]
+    }
+  },
   "expertReviews": [
     {
       "expertRefCode": "EXP-2026-SM03",
@@ -138,5 +272,5 @@
       }
     }
   ],
-  "generated": "2026-08-05"
+  "generated": "2026-08-08"
 }
