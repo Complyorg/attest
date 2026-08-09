@@ -7,7 +7,7 @@
   "subcategory": "A/B Testing",
   "description": "A/B testing and adaptive experience optimization platform. Processing is limited to pseudonymous experiment data: a randomly generated first-party visitor identifier, variant assignments and goal events, and low-cardinality traits with no direct identifiers. Analysis runs at variant and cohort level only, with aggregate results released under k-anonymity thresholds; the service is not used to profile or target individual users.",
   "website": "https://www.conductrics.com",
-  "privacyPolicyUrl": "https://www.conductrics.com/./manage#data-privacy",
+  "privacyPolicyUrl": "https://www.conductrics.com/privacy-policy/",
   "trustCenterUrl": "https://attest.comply.org/conductrics/",
   "dpaUrl": null,
   "dpaAvailability": "upon-request",
@@ -272,5 +272,5 @@
       }
     }
   ],
-  "generated": "2026-08-08"
+  "generated": "2026-08-09"
 }
