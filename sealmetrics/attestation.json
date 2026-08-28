@@ -56,74 +56,58 @@
   },
   "transparencyScore": 70,
   "dpaAnalysis": {
-    "overallScore": 81,
+    "overallScore": 85,
     "gdpr": {
       "score": 100,
       "total": 8,
       "clauses": [
         {
-          "id": "gdpr_instructions",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_instructions",
           "label": "Process only on documented instructions",
-          "article": "Art. 28(3)(a)",
-          "matchedText": "…s The Processor shall process Personal Data in accordance with the Controller's documented instructions. The Processor may exercise reasonable technical discretion in routine operatio…"
+          "found": true,
+          "article": "Art. 28(3)(a)"
         },
         {
-          "id": "gdpr_confidentiality",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_confidentiality",
           "label": "Confidentiality obligation",
-          "article": "Art. 28(3)(b)",
-          "matchedText": "…ssor shall ensure that persons authorized to process Personal Data are bound by confidentiality obligations, whether through contractual terms of employment or statutory obligation. The…"
+          "found": true,
+          "article": "Art. 28(3)(b)"
         },
         {
-          "id": "gdpr_security",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_security",
           "label": "Technical & organizational measures",
-          "article": "Art. 28(3)(c)",
-          "matchedText": "…asures implemented by the Processor to protect Personal Data in accordance with Article 32 of the GDPR. 1 . E N C RY P T I O N (a) All Personal Data transmitted over publ…"
+          "found": true,
+          "article": "Art. 28(3)(c)"
         },
         {
-          "id": "gdpr_subprocessor",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_subprocessor",
           "label": "Sub-processor conditions",
-          "article": "Art. 28(3)(d)",
-          "matchedText": "…on, loss, alteration, unauthorized disclosure of, or access to, Personal Data. “Sub-processor” means any third party engaged by the Processor to process Personal Data on beh…"
+          "found": true,
+          "article": "Art. 28(3)(d)"
         },
         {
-          "id": "gdpr_data_subject",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_data_subject",
           "label": "Data subject rights assistance",
-          "article": "Art. 28(3)(e)",
-          "matchedText": "…er's notification obligations to supervisory authorities and data subjects. 4.7 Data subject rights assistance The Processor shall assist the Controller, by appropriate technical…"
+          "found": true,
+          "article": "Art. 28(3)(e)"
         },
         {
-          "id": "gdpr_breach_dpia",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_breach_dpia",
           "label": "Breach notification & DPIA assistance",
-          "article": "Art. 28(3)(f)",
-          "matchedText": "…onal Data breach. The notification shall include all information required under Article 33(3) of the GDPR or equivalent applicable law. The Processor shall cooperate with…"
+          "found": true,
+          "article": "Art. 28(3)(f)"
         },
         {
-          "id": "gdpr_deletion",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_deletion",
           "label": "Deletion/return of data",
-          "article": "Art. 28(3)(g)",
-          "matchedText": "…termination or expiry of the Principal Agreement, the Processor shall securely delete all Personal Data within ninety (90) days, including all copies in production systems, backups, and archives. The"
+          "found": true,
+          "article": "Art. 28(3)(g)"
         },
         {
-          "id": "gdpr_audit",
-          "law": "GDPR",
-          "found": true,
+          "key": "gdpr_audit",
           "label": "Audit rights",
-          "article": "Art. 28(3)(h)",
-          "matchedText": "…s for assistance beyond standard operations may be charged at agreed rates. 4.8 Audit rights The Processor shall provide the Controller with an annual compliance report su…"
+          "found": true,
+          "article": "Art. 28(3)(h)"
         }
       ]
     },
@@ -132,94 +116,76 @@
       "total": 6,
       "clauses": [
         {
-          "id": "ccpa_purpose_limit",
-          "law": "CCPA",
-          "found": true,
+          "key": "ccpa_purpose_limit",
           "label": "Purpose limitation",
-          "article": "CCPA §1798.140(ag)",
-          "matchedText": "…incipal Agreement. The categories of data subjects, types of Personal Data, and purposes of processing are described in Annex 1, which may be updated by mutual agreement to reflect changes in the Ser"
+          "found": true,
+          "article": "CCPA §1798.140(ag)"
         },
         {
-          "id": "ccpa_no_sell",
-          "law": "CCPA",
-          "found": false,
+          "key": "ccpa_no_sell",
           "label": "No selling/sharing",
+          "found": false,
           "article": "CCPA §1798.100(d)"
         },
         {
-          "id": "ccpa_no_combine",
-          "law": "CCPA",
-          "found": false,
+          "key": "ccpa_no_combine",
           "label": "No combining data",
+          "found": false,
           "article": "CCPA §1798.140(ag)(1)"
         },
         {
-          "id": "ccpa_compliance",
-          "law": "CCPA",
-          "found": true,
+          "key": "ccpa_compliance",
           "label": "Compliance with CCPA",
-          "article": "CCPA §1798.100",
-          "matchedText": "…ia Consumer Privacy Act of 2018 and the California Privacy Rights Act of 2020 (\"CCPA/CPRA\"), where applicable. 1 . D E F I N I T I O N S In this Agreement: “Data Pr…"
+          "found": true,
+          "article": "CCPA §1798.100"
         },
         {
-          "id": "ccpa_notify",
-          "law": "CCPA",
-          "found": false,
+          "key": "ccpa_notify",
           "label": "Right to notify non-compliance",
+          "found": false,
           "article": "CCPA §1798.100(d)(3)"
         },
         {
-          "id": "ccpa_grant_audit",
-          "law": "CCPA",
-          "found": true,
+          "key": "ccpa_grant_audit",
           "label": "Allow compliance assessment",
-          "article": "CCPA §1798.100(d)(4)",
-          "matchedText": "…ible for monitoring the application of Data Protection Laws. 2. Assistance with compliance Taking into account the nature of the processing and the information available to it, the Processor shall as"
+          "found": true,
+          "article": "CCPA §1798.100(d)(4)"
         }
       ]
     },
     "usState": {
-      "score": 80,
+      "score": 100,
       "total": 5,
       "clauses": [
         {
-          "id": "us_binding_instructions",
-          "law": "US_STATE",
-          "found": false,
+          "key": "us_binding_instructions",
           "label": "Binding instructions",
+          "found": true,
           "article": "State Processor Laws"
         },
         {
-          "id": "us_duty_of_care",
-          "law": "US_STATE",
-          "found": true,
+          "key": "us_duty_of_care",
           "label": "Duty of confidentiality",
-          "article": "State Processor Laws",
-          "matchedText": "…rties shall negotiate in good faith to resolve the concern. The Processor shall ensure each Sub-processor is bound by data protection obligations no less protective than those in this Agreement. 4.4 "
+          "found": true,
+          "article": "State Processor Laws"
         },
         {
-          "id": "us_delete_return",
-          "law": "US_STATE",
-          "found": true,
+          "key": "us_delete_return",
           "label": "Delete or return data",
-          "article": "State Processor Laws",
-          "matchedText": "…cessor's standard export tools. The Processor shall confirm deletion in writing upon request. Data retained pursuant to applicable legal requirements shall be isolated and protected. 4.10 Confidentia"
+          "found": true,
+          "article": "State Processor Laws"
         },
         {
-          "id": "us_sub_contract",
-          "law": "US_STATE",
-          "found": true,
+          "key": "us_sub_contract",
           "label": "Sub-contractor requirements",
-          "article": "State Processor Laws",
-          "matchedText": "…Cornellà-Barcelona, Spain (\"Processor\") B A C K G R O U N D The Controller has engaged the Processor to provide certain services. In providing those services, the Processor will process Personal Data"
+          "found": true,
+          "article": "State Processor Laws"
         },
         {
-          "id": "us_audit_assessment",
-          "law": "US_STATE",
-          "found": true,
+          "key": "us_audit_assessment",
           "label": "Assessment/audit",
-          "article": "State Processor Laws",
-          "matchedText": "…s for assistance beyond standard operations may be charged at agreed rates. 4.8 Audit rights The Processor shall provide the Controller with an annual compliance report summarizing its data protectio"
+          "found": true,
+          "article": "State Processor Laws"
         }
       ]
     }
@@ -260,5 +226,5 @@
       }
     }
   ],
-  "generated": "2026-08-05"
+  "generated": "2026-08-28"
 }
