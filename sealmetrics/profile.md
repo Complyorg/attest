@@ -6,8 +6,8 @@ subcategory: "Web Analytics"
 status: "Expert-Verified"
 jurisdictions: []
 transparencyScore: 70
-dpaComplianceScore: 81
-generated: "2026-08-05"
+dpaComplianceScore: 85
+generated: "2026-08-28"
 ---
 
 # Seal Metrics
@@ -19,7 +19,7 @@ Get 100% real, legal, consentless analytics data. Stop making decisions with bro
 ## Summary
 
 - Transparency Score: 70%
-- DPA Compliance Score: 81%
+- DPA Compliance Score: 85%
 - Designated DPO: Yes
 
 ## Core Principles
@@ -80,6 +80,6 @@ Seal Metrics provides cookieless, consent-free web analytics by design. Their ar
 
 ---
 
-*Generated 2026-08-05.*
+*Generated 2026-08-28.*
 
 *[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

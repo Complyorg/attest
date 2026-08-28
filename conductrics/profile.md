@@ -7,7 +7,7 @@ status: "Expert-Verified"
 jurisdictions: ["EU", "CA", "US"]
 transparencyScore: 100
 dpaComplianceScore: 100
-generated: "2026-08-09"
+generated: "2026-08-28"
 ---
 
 # Conductrics
@@ -89,6 +89,6 @@ Conductrics provides privacy-focused A/B testing and experimentation. Data proce
 
 ---
 
-*Generated 2026-08-09.*
+*Generated 2026-08-28.*
 
 *[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
