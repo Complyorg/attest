@@ -1,0 +1,276 @@
+{
+  "$complyVersion": "1.2",
+  "slug": "conductrics",
+  "name": "Conductrics",
+  "legalName": "Conductrics Inc.",
+  "category": "Personalization & Engagement",
+  "subcategory": "A/B Testing",
+  "description": "A/B testing and adaptive experience optimization platform. Processing is limited to pseudonymous experiment data: a randomly generated first-party visitor identifier, variant assignments and goal events, and low-cardinality traits with no direct identifiers. Analysis runs at variant and cohort level only, with aggregate results released under k-anonymity thresholds; the service is not used to profile or target individual users.",
+  "website": "https://www.conductrics.com",
+  "privacyPolicyUrl": "https://www.conductrics.com/privacy-policy/",
+  "trustCenterUrl": "https://attest.comply.org/conductrics/",
+  "dpaUrl": null,
+  "dpaAvailability": null,
+  "securityPageUrl": "https://www.conductrics.com/security-and-compliance/",
+  "certifications": [
+    "SOC 2 Type 2"
+  ],
+  "frameworks": [
+    "GDPR",
+    "CCPA"
+  ],
+  "gdprCompliant": true,
+  "ccpaCompliant": true,
+  "hipaaCompliant": null,
+  "dataLocations": [
+    "US",
+    "EU"
+  ],
+  "hasEuDataCenter": true,
+  "subprocessors": [
+    {
+      "name": "Google Cloud Platform",
+      "purpose": "Cloud infrastructure hosting; storage of personal data at rest in encrypted form, including encrypted backups",
+      "location": "EU"
+    },
+    {
+      "name": "Amazon Web Services",
+      "purpose": "Cloud infrastructure hosting; storage of personal data at rest in encrypted form, including encrypted backups",
+      "location": "EU"
+    }
+  ],
+  "transferSafeguards": "SCCs (EU 2021/914, Module Two) with a documented transfer impact assessment; personal data at rest is hosted in EU regions, accessed remotely from the US. Not certified under the EU-US DPF.",
+  "supportsDsars": true,
+  "hasDesignatedDpo": true,
+  "hasRecentBreach": false,
+  "encryptionAtRest": true,
+  "encryptionInTransit": true,
+  "penTestFrequency": null,
+  "breachNotificationDays": 72,
+  "dataRetentionPolicy": "Personal data is deleted within 90 days of contract termination, including production copies, backups, and archives; encrypted backup media cycle out within 30 days. Deletion is confirmed in writing on request.",
+  "privacyTechnologies": [
+    "Anonymization",
+    "k-Anonymity"
+  ],
+  "euAiActCompliant": null,
+  "aiCapabilities": [
+    "A/B Testing Optimization",
+    "Personalization",
+    "Audience Prediction"
+  ],
+  "aiTechniques": [
+    "Reinforcement Learning",
+    "Multi-Armed Bandits",
+    "Q-Learning",
+    "Decision Trees"
+  ],
+  "euAiActRole": null,
+  "iso42001Certified": null,
+  "aiDisclosure": {
+    "status": "disclosed",
+    "transparencyLevel": "transparent",
+    "models": [
+      {
+        "name": "Proprietary Reinforcement Learning Models",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      },
+      {
+        "name": "Multi-Armed Bandit Engine",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      },
+      {
+        "name": "Q-Learning Decision Engine",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      },
+      {
+        "name": "Decision Tree Classifier",
+        "type": "Custom ML",
+        "provider": null,
+        "euAiActRiskTier": "minimal",
+        "isOpenSource": false
+      }
+    ]
+  },
+  "transparencyScore": 90,
+  "dpaAnalysis": {
+    "overallScore": 100,
+    "gdpr": {
+      "score": 100,
+      "total": 8,
+      "clauses": [
+        {
+          "key": "gdpr_instructions",
+          "label": "Process only on documented instructions",
+          "found": true,
+          "article": "Art. 28(3)(a)"
+        },
+        {
+          "key": "gdpr_confidentiality",
+          "label": "Confidentiality obligation",
+          "found": true,
+          "article": "Art. 28(3)(b)"
+        },
+        {
+          "key": "gdpr_security",
+          "label": "Technical & organizational measures",
+          "found": true,
+          "article": "Art. 28(3)(c)"
+        },
+        {
+          "key": "gdpr_subprocessor",
+          "label": "Sub-processor conditions",
+          "found": true,
+          "article": "Art. 28(3)(d)"
+        },
+        {
+          "key": "gdpr_data_subject",
+          "label": "Data subject rights assistance",
+          "found": true,
+          "article": "Art. 28(3)(e)"
+        },
+        {
+          "key": "gdpr_breach_dpia",
+          "label": "Breach notification & DPIA assistance",
+          "found": true,
+          "article": "Art. 28(3)(f)"
+        },
+        {
+          "key": "gdpr_deletion",
+          "label": "Deletion/return of data",
+          "found": true,
+          "article": "Art. 28(3)(g)"
+        },
+        {
+          "key": "gdpr_audit",
+          "label": "Audit rights",
+          "found": true,
+          "article": "Art. 28(3)(h)"
+        }
+      ]
+    },
+    "ccpa": {
+      "score": 100,
+      "total": 6,
+      "clauses": [
+        {
+          "key": "ccpa_purpose_limit",
+          "label": "Purpose limitation",
+          "found": true,
+          "article": "CCPA §1798.140(ag)"
+        },
+        {
+          "key": "ccpa_no_sell",
+          "label": "No selling/sharing",
+          "found": true,
+          "article": "CCPA §1798.100(d)"
+        },
+        {
+          "key": "ccpa_no_combine",
+          "label": "No combining data",
+          "found": true,
+          "article": "CCPA §1798.140(ag)(1)"
+        },
+        {
+          "key": "ccpa_compliance",
+          "label": "Compliance with CCPA",
+          "found": true,
+          "article": "CCPA §1798.100"
+        },
+        {
+          "key": "ccpa_notify",
+          "label": "Right to notify non-compliance",
+          "found": true,
+          "article": "CCPA §1798.100(d)(3)"
+        },
+        {
+          "key": "ccpa_grant_audit",
+          "label": "Allow compliance assessment",
+          "found": true,
+          "article": "CCPA §1798.100(d)(4)"
+        }
+      ]
+    },
+    "usState": {
+      "score": 100,
+      "total": 5,
+      "clauses": [
+        {
+          "key": "us_binding_instructions",
+          "label": "Binding instructions",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_duty_of_care",
+          "label": "Duty of confidentiality",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_delete_return",
+          "label": "Delete or return data",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_sub_contract",
+          "label": "Sub-contractor requirements",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_audit_assessment",
+          "label": "Assessment/audit",
+          "found": true,
+          "article": "State Processor Laws"
+        }
+      ]
+    }
+  },
+  "expertReviews": [
+    {
+      "expertRefCode": "EXP-2026-SM03",
+      "issuingPlatform": "vendor.watch",
+      "issuingPlatformUrl": "https://vendor.watch/verify/EXP-2026-SM03",
+      "expertType": "legal",
+      "completedAt": "2026-03-06T00:00:00.000Z",
+      "summaryReport": "Conductrics provides privacy-focused A/B testing and experimentation. Data processing is available in both EU and US regions via Google Cloud Platform and Amazon Web Services. Conductrics applies anonymization and K-Anonymity techniques to protect individual-level data. They encrypt data at rest and in transit, and have a comprehensive DPA covering all GDPR and CCPA required clauses at 100%. All six core principles are verified.",
+      "principles": {
+        "transparency": {
+          "status": "verified",
+          "notes": "Full transparency on data collection and experimentation practices. Privacy policy and DPA publicly available."
+        },
+        "dataMinimization": {
+          "status": "verified",
+          "notes": "K-Anonymity and anonymization techniques ensure minimal personal data exposure. Collects only data necessary for experimentation."
+        },
+        "accountability": {
+          "status": "verified",
+          "notes": "GDPR and CCPA compliant framework. Comprehensive DPA scoring 100% across both regulations. Business Continuity Plan and Data Breach Notification Procedures in place."
+        },
+        "security": {
+          "status": "verified",
+          "notes": "Encryption at rest and in transit. Annual penetration testing. Infrastructure hosted on GCP and AWS with inherited security certifications."
+        },
+        "quality": {
+          "status": "verified",
+          "notes": "EU data center availability ensures data sovereignty. K-Anonymity techniques maintain statistical quality while protecting privacy."
+        },
+        "participation": {
+          "status": "verified",
+          "notes": "Supports DSARs. Designated DPO. Full data subject rights processes in place."
+        }
+      }
+    }
+  ],
+  "generated": "2026-10-05"
+}

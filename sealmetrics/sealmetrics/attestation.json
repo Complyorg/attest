@@ -1,0 +1,230 @@
+{
+  "$complyVersion": "1.2",
+  "slug": "sealmetrics",
+  "name": "Seal Metrics",
+  "legalName": null,
+  "category": "Analytics & BI",
+  "subcategory": "Web Analytics",
+  "description": "Get 100% real, legal, consentless analytics data. Stop making decisions with broken GA4 data. Sealmetrics gives you complete attribution without cookies or consent banners.",
+  "website": "https://sealmetrics.com",
+  "privacyPolicyUrl": "https://www.esfera-group.com/privacy",
+  "trustCenterUrl": null,
+  "dpaUrl": "https://attest.comply.org/dpa/sealmetrics.pdf",
+  "dpaAvailability": "public",
+  "securityPageUrl": "https://sealmetrics.com/security/",
+  "certifications": [],
+  "frameworks": [
+    "GDPR"
+  ],
+  "gdprCompliant": false,
+  "ccpaCompliant": false,
+  "hipaaCompliant": null,
+  "dataLocations": [
+    "EU",
+    "Ireland"
+  ],
+  "hasEuDataCenter": true,
+  "subprocessors": [
+    {
+      "name": "Noraina",
+      "purpose": "Cloud hosting / ISP",
+      "location": "Ireland"
+    }
+  ],
+  "transferSafeguards": "No international transfers — EU-only processing",
+  "supportsDsars": true,
+  "hasDesignatedDpo": true,
+  "hasRecentBreach": false,
+  "encryptionAtRest": true,
+  "encryptionInTransit": true,
+  "penTestFrequency": "annually",
+  "breachNotificationDays": 72,
+  "dataRetentionPolicy": "Data retained for contract duration, deleted upon termination",
+  "privacyTechnologies": [
+    "Anonymization",
+    "Pseudonymization"
+  ],
+  "euAiActCompliant": null,
+  "aiCapabilities": [],
+  "aiTechniques": [],
+  "euAiActRole": null,
+  "iso42001Certified": null,
+  "aiDisclosure": {
+    "status": "none",
+    "transparencyLevel": "n/a",
+    "models": []
+  },
+  "transparencyScore": 70,
+  "dpaAnalysis": {
+    "overallScore": 85,
+    "gdpr": {
+      "score": 100,
+      "total": 8,
+      "clauses": [
+        {
+          "key": "gdpr_instructions",
+          "label": "Process only on documented instructions",
+          "found": true,
+          "article": "Art. 28(3)(a)"
+        },
+        {
+          "key": "gdpr_confidentiality",
+          "label": "Confidentiality obligation",
+          "found": true,
+          "article": "Art. 28(3)(b)"
+        },
+        {
+          "key": "gdpr_security",
+          "label": "Technical & organizational measures",
+          "found": true,
+          "article": "Art. 28(3)(c)"
+        },
+        {
+          "key": "gdpr_subprocessor",
+          "label": "Sub-processor conditions",
+          "found": true,
+          "article": "Art. 28(3)(d)"
+        },
+        {
+          "key": "gdpr_data_subject",
+          "label": "Data subject rights assistance",
+          "found": true,
+          "article": "Art. 28(3)(e)"
+        },
+        {
+          "key": "gdpr_breach_dpia",
+          "label": "Breach notification & DPIA assistance",
+          "found": true,
+          "article": "Art. 28(3)(f)"
+        },
+        {
+          "key": "gdpr_deletion",
+          "label": "Deletion/return of data",
+          "found": true,
+          "article": "Art. 28(3)(g)"
+        },
+        {
+          "key": "gdpr_audit",
+          "label": "Audit rights",
+          "found": true,
+          "article": "Art. 28(3)(h)"
+        }
+      ]
+    },
+    "ccpa": {
+      "score": 50,
+      "total": 6,
+      "clauses": [
+        {
+          "key": "ccpa_purpose_limit",
+          "label": "Purpose limitation",
+          "found": true,
+          "article": "CCPA §1798.140(ag)"
+        },
+        {
+          "key": "ccpa_no_sell",
+          "label": "No selling/sharing",
+          "found": false,
+          "article": "CCPA §1798.100(d)"
+        },
+        {
+          "key": "ccpa_no_combine",
+          "label": "No combining data",
+          "found": false,
+          "article": "CCPA §1798.140(ag)(1)"
+        },
+        {
+          "key": "ccpa_compliance",
+          "label": "Compliance with CCPA",
+          "found": true,
+          "article": "CCPA §1798.100"
+        },
+        {
+          "key": "ccpa_notify",
+          "label": "Right to notify non-compliance",
+          "found": false,
+          "article": "CCPA §1798.100(d)(3)"
+        },
+        {
+          "key": "ccpa_grant_audit",
+          "label": "Allow compliance assessment",
+          "found": true,
+          "article": "CCPA §1798.100(d)(4)"
+        }
+      ]
+    },
+    "usState": {
+      "score": 100,
+      "total": 5,
+      "clauses": [
+        {
+          "key": "us_binding_instructions",
+          "label": "Binding instructions",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_duty_of_care",
+          "label": "Duty of confidentiality",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_delete_return",
+          "label": "Delete or return data",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_sub_contract",
+          "label": "Sub-contractor requirements",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_audit_assessment",
+          "label": "Assessment/audit",
+          "found": true,
+          "article": "State Processor Laws"
+        }
+      ]
+    }
+  },
+  "expertReviews": [
+    {
+      "expertRefCode": "EXP-2026-SM01",
+      "issuingPlatform": "vendor.watch",
+      "issuingPlatformUrl": "https://vendor.watch/verify/EXP-2026-SM01",
+      "expertType": "legal",
+      "completedAt": "2026-03-06T00:00:00.000Z",
+      "summaryReport": "Seal Metrics provides cookieless, consent-free web analytics by design. Their architecture ensures no personal data is collected, removing the need for cookie consent banners. Data processing is fully EU-based via Noraina (Ireland). While they do not hold ISO 27001 or SOC 2 certifications directly, their infrastructure provider Noraina maintains ISO 27001 certification. Seal Metrics has a comprehensive DPA, a Business Continuity Plan, and Data Breach Notification Procedures in place. All six core principles are verified.",
+      "principles": {
+        "transparency": {
+          "status": "verified",
+          "notes": "Full transparency on data collection practices. Privacy-by-design architecture means no personal data is processed. Clear privacy policy and DPA available."
+        },
+        "dataMinimization": {
+          "status": "verified",
+          "notes": "Cookieless analytics by design — collects only aggregated, anonymized data. No cookies, no fingerprinting, no personal identifiers."
+        },
+        "accountability": {
+          "status": "verified",
+          "notes": "GDPR-compliant framework. DPA available. Business Continuity Plan and Data Breach Notification Procedures in place. ISO 27001 inherited from infrastructure provider Noraina."
+        },
+        "security": {
+          "status": "verified",
+          "notes": "Encryption at rest and in transit. Annual penetration testing. EU-only data processing via Noraina (Ireland). Business Continuity Plan in place."
+        },
+        "quality": {
+          "status": "verified",
+          "notes": "EU data center ensures data sovereignty. Anonymization and pseudonymization techniques applied to ensure data quality without personal data dependency."
+        },
+        "participation": {
+          "status": "verified",
+          "notes": "Supports DSARs. Designated DPO. By design, minimal personal data means fewer data subject rights concerns, but processes are in place."
+        }
+      }
+    }
+  ],
+  "generated": "2026-10-05"
+}

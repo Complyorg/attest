@@ -1,0 +1,81 @@
+---
+slug: sealmetrics
+name: "Seal Metrics"
+
+category: "Analytics & BI"
+subcategory: "Web Analytics"
+status: "Expert-Verified"
+jurisdictions: []
+transparencyScore: 70
+dpaComplianceScore: 85
+generated: "2026-10-05"
+---
+
+# Seal Metrics
+
+**Analytics & BI** / Web Analytics | Expert-Verified
+
+Get 100% real, legal, consentless analytics data. Stop making decisions with broken GA4 data. Sealmetrics gives you complete attribution without cookies or consent banners.
+
+## Summary
+
+- Transparency Score: 70%
+- DPA Compliance Score: 85%
+- Designated DPO: Yes
+
+## Core Principles
+
+| Principle | Status |
+|-----------|--------|
+| Transparency | Verified |
+| Data Minimization | Verified |
+| Accountability | Verified |
+| Security | Verified |
+| Quality | Verified |
+| Participation | Verified |
+
+## Resources & Safeguards
+
+- Encryption at rest
+- Encryption in transit
+- Penetration testing: annually
+- Breach notification: 72 hours
+
+### Privacy Enhancing Measures
+
+- **De-Identification**: Pseudonymization, Anonymization
+
+- [DPA](https://attest.comply.org/dpa/sealmetrics.pdf)
+- [Privacy Notice](https://www.esfera-group.com/privacy)
+- [Security Page](https://sealmetrics.com/security/)
+- [Website](https://sealmetrics.com)
+
+## DPA Compliance Analysis
+
+| Law | Score | Percentage |
+|-----|-------|------------|
+| GDPR | 8/8 | 100% |
+| CCPA | 3/6 | 50% |
+
+## Subprocessors
+
+| Name | Purpose | Location |
+|------|---------|----------|
+| Noraina | Cloud hosting / ISP | Ireland |
+
+## International Data Transfers
+
+No international transfers — EU-only processing
+
+## Expert Reviews
+
+### EXP-2026-SM01 (Legal) — 2026-03-06
+
+Seal Metrics provides cookieless, consent-free web analytics by design. Their architecture ensures no personal data is collected, removing the need for cookie consent banners. Data processing is fully EU-based via Noraina (Ireland). While they do not hold ISO 27001 or SOC 2 certifications directly, their infrastructure provider Noraina maintains ISO 27001 certification. Seal Metrics has a comprehensive DPA, a Business Continuity Plan, and Data Breach Notification Procedures in place. All six core principles are verified.
+
+
+---
+
+*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-10-05.*
+
+*[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
