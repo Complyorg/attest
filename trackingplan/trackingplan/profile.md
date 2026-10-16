@@ -6,9 +6,9 @@ category: "Analytics & BI"
 subcategory: "Web Analytics"
 status: "Expert-Verified"
 jurisdictions: []
-transparencyScore: 70
+transparencyScore: 90
 dpaComplianceScore: 92
-generated: "2026-10-05"
+generated: "2026-10-16"
 ---
 
 # Trackingplan
@@ -21,7 +21,7 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 ## Summary
 
-- Transparency Score: 70%
+- Transparency Score: 90%
 - DPA Compliance Score: 92%
 - Designated DPO: No
 
@@ -38,9 +38,18 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 ## Resources & Safeguards
 
+- Encryption at rest
+- Encryption in transit
+- Penetration testing: annually
+- Breach notification: 72 hours
+
+### Privacy Enhancing Measures
+
+- **De-Identification**: Data Masking, Anonymization
 
 - [DPA](https://attest.comply.org/dpa/trackingplan.pdf)
 - [Privacy Notice](https://www.trackingplan.com/privacy-policy)
+- [Trust Center](https://www.trackingplan.com/privacy-hub)
 - [Security Page](https://www.trackingplan.com/docs/privacy-and-security)
 - [Website](https://www.trackingplan.com)
 
@@ -50,8 +59,8 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 | Model | Type | Provider | EU AI Act Risk | Open Source |
 |-------|------|----------|----------------|-------------|
-| Claude | LLM | Anthropic | — | — |
-| GPT | LLM | OpenAI | — | — |
+| Claude | LLM | Anthropic | Not Classified | No |
+| GPT | LLM | OpenAI | Not Classified | No |
 
 ## DPA Compliance Analysis
 
@@ -64,10 +73,13 @@ Automatically detect what's affecting your digital analytics, maintain up-to-dat
 
 | Name | Purpose | Location |
 |------|---------|----------|
-| Amazon Web Services S.A.R.L. | Cloud infrastructure hosting (compute, storage, networking) and AI model inference via AWS Bedrock (Anthropic Claude models) | Frankfurt, Germany |
+| Amazon Web Services S.A.R.L. | Cloud infrastructure hosting (compute, storage, networking) | Frankfurt, Germany |
 | ClickHouse, Inc. | Analytical database services | Frankfurt, Germany |
 | Cloudflare | Edge network for data ingestion | User region |
-| Microsoft Azure | AI/LLM model inference via Microsoft Azure AI Foundry (OpenAI GPT models) | EUR Data Zone |
+| Microsoft Azure | Cloud infrastructure hosting and AI/LLM model inference via Microsoft Azure AI Foundry (OpenAI GPT models) | EUR Data Zone |
+| Fivetran, Inc. | Advertising reporting data. Optional. | Frankfurt, Germany |
+| Amplitude | Internal product analytics of the app | Frankfurt, Germany |
+| PostHog | Internal product analytics of the app | Frankfurt, Germany |
 
 ## International Data Transfers
 
@@ -82,6 +94,6 @@ Trackingplan provides automated data quality monitoring for analytics implementa
 
 ---
 
-*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-10-05.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-16.*
 
 *[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

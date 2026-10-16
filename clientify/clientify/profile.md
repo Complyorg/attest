@@ -8,7 +8,7 @@ status: "Self-Reported"
 jurisdictions: ["EU"]
 transparencyScore: 60
 
-generated: "2026-10-05"
+generated: "2026-10-16"
 ---
 
 # Clientify
@@ -72,6 +72,6 @@ EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (
 
 ---
 
-*Data provided by [Vendor.Watch](https://vendor.watch). Generated 2026-10-05.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-16.*
 
 *[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
