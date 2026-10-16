@@ -1,39 +1,49 @@
 {
   "$complyVersion": "1.2",
   "slug": "sealmetrics",
-  "name": "Seal Metrics",
-  "legalName": null,
+  "name": "Sealmetrics",
+  "legalName": "Sealmetrics S.L.",
   "category": "Analytics & BI",
   "subcategory": "Web Analytics",
-  "description": "Get 100% real, legal, consentless analytics data. Stop making decisions with broken GA4 data. Sealmetrics gives you complete attribution without cookies or consent banners.",
+  "description": "Cookieless web analytics for online shops, run by Sealmetrics S.L. (Barcelona, Spain). Records page views, events and conversions without analytics cookies or persistent identifiers and reports aggregate data only. Visitor data is stored in Dublin, Ireland.",
   "website": "https://sealmetrics.com",
-  "privacyPolicyUrl": "https://www.esfera-group.com/privacy",
-  "trustCenterUrl": null,
-  "dpaUrl": "https://attest.comply.org/dpa/sealmetrics.pdf",
+  "privacyPolicyUrl": "https://sealmetrics.com/privacy/",
+  "trustCenterUrl": "https://sealmetrics.com/trust/",
+  "dpaUrl": "https://sealmetrics.com/dpa/",
   "dpaAvailability": "public",
   "securityPageUrl": "https://sealmetrics.com/security/",
   "certifications": [],
   "frameworks": [
     "GDPR"
   ],
-  "gdprCompliant": false,
-  "ccpaCompliant": false,
+  "gdprCompliant": true,
+  "ccpaCompliant": null,
   "hipaaCompliant": null,
   "dataLocations": [
-    "EU",
-    "Ireland"
+    "IE",
+    "FR"
   ],
   "hasEuDataCenter": true,
   "subprocessors": [
     {
-      "name": "Noraina",
-      "purpose": "Cloud hosting / ISP",
+      "name": "Noraina Limited",
+      "purpose": "Infrastructure and database hosting (all Service Data)",
       "location": "Ireland"
+    },
+    {
+      "name": "Scaleway SAS (Iliad group)",
+      "purpose": "Managed LLM inference for the default AI provider 'Seal AI' (zero data retention)",
+      "location": "France (Paris)"
+    },
+    {
+      "name": "Resend (Plus Five Five, Inc.)",
+      "purpose": "Service emails to the client's account users; no visitor data",
+      "location": "United States"
     }
   ],
-  "transferSafeguards": "No international transfers — EU-only processing",
+  "transferSafeguards": "Visitor data is processed and stored only in the EU (hosting in Ireland, default AI inference at Scaleway in Paris). Service emails to account users go through Resend (USA) under SCCs and the EU-U.S. Data Privacy Framework. The optional AI brand-monitoring feature sends data to US model providers.",
   "supportsDsars": true,
-  "hasDesignatedDpo": true,
+  "hasDesignatedDpo": false,
   "hasRecentBreach": false,
   "encryptionAtRest": true,
   "encryptionInTransit": true,
@@ -54,7 +64,7 @@
     "transparencyLevel": "n/a",
     "models": []
   },
-  "transparencyScore": 70,
+  "transparencyScore": 80,
   "dpaAnalysis": {
     "overallScore": 85,
     "gdpr": {
@@ -226,5 +236,5 @@
       }
     }
   ],
-  "generated": "2026-08-28"
+  "generated": "2026-10-16"
 }

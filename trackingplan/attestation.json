@@ -28,7 +28,7 @@
   "subprocessors": [
     {
       "name": "Amazon Web Services S.A.R.L.",
-      "purpose": "Cloud infrastructure hosting (compute, storage, networking) and AI model inference via AWS Bedrock (Anthropic Claude models)",
+      "purpose": "Cloud infrastructure hosting (compute, storage, networking)",
       "location": "Frankfurt, Germany"
     },
     {
@@ -43,8 +43,23 @@
     },
     {
       "name": "Microsoft Azure",
-      "purpose": "AI/LLM model inference via Microsoft Azure AI Foundry (OpenAI GPT models)",
+      "purpose": "Cloud infrastructure hosting and AI/LLM model inference via Microsoft Azure AI Foundry (OpenAI GPT models)",
       "location": "EUR Data Zone"
+    },
+    {
+      "name": "Fivetran, Inc.",
+      "purpose": "Advertising reporting data. Optional.",
+      "location": "Frankfurt, Germany"
+    },
+    {
+      "name": "Amplitude",
+      "purpose": "Internal product analytics of the app",
+      "location": "Frankfurt, Germany"
+    },
+    {
+      "name": "PostHog",
+      "purpose": "Internal product analytics of the app",
+      "location": "Frankfurt, Germany"
     }
   ],
   "transferSafeguards": "No international transfers — EU-only processing",
@@ -60,18 +75,22 @@
     "Anonymization",
     "Data Masking"
   ],
-  "euAiActCompliant": null,
+  "euAiActCompliant": true,
   "aiCapabilities": [
-    "Classification",
-    "Summarization"
+    "Code Generation",
+    "Text Generation",
+    "Search",
+    "Agents"
   ],
   "aiTechniques": [
     "Machine Learning",
     "NLP",
     "Generative AI",
-    "Statistical"
+    "Statistical",
+    "Agentic AI",
+    "Rule-Based"
   ],
-  "euAiActRole": "Provider",
+  "euAiActRole": "Deployer",
   "iso42001Certified": null,
   "aiDisclosure": {
     "status": "disclosed",
@@ -81,15 +100,15 @@
         "name": "Claude",
         "type": "LLM",
         "provider": "Anthropic",
-        "euAiActRiskTier": null,
-        "isOpenSource": null
+        "euAiActRiskTier": "Not Classified",
+        "isOpenSource": false
       },
       {
         "name": "GPT",
         "type": "LLM",
         "provider": "OpenAI",
-        "euAiActRiskTier": null,
-        "isOpenSource": null
+        "euAiActRiskTier": "Not Classified",
+        "isOpenSource": false
       }
     ]
   },
@@ -265,5 +284,5 @@
       }
     }
   ],
-  "generated": "2026-08-28"
+  "generated": "2026-10-16"
 }

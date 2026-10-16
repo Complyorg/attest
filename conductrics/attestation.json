@@ -10,7 +10,7 @@
   "privacyPolicyUrl": "https://www.conductrics.com/privacy-policy/",
   "trustCenterUrl": "https://attest.comply.org/conductrics/",
   "dpaUrl": null,
-  "dpaAvailability": "upon-request",
+  "dpaAvailability": null,
   "securityPageUrl": "https://www.conductrics.com/security-and-compliance/",
   "certifications": [
     "SOC 2 Type 2"
@@ -100,7 +100,7 @@
       }
     ]
   },
-  "transparencyScore": 100,
+  "transparencyScore": 90,
   "dpaAnalysis": {
     "overallScore": 100,
     "gdpr": {
@@ -272,5 +272,5 @@
       }
     }
   ],
-  "generated": "2026-08-28"
+  "generated": "2026-10-16"
 }
