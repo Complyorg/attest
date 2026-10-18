@@ -8,7 +8,7 @@ status: "Expert-Verified"
 jurisdictions: []
 transparencyScore: 90
 dpaComplianceScore: 92
-generated: "2026-10-17"
+generated: "2026-10-18"
 ---
 
 # Trackingplan
@@ -94,6 +94,6 @@ Trackingplan provides automated data quality monitoring for analytics implementa
 
 ---
 
-*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-17.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-18.*
 
 *[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
