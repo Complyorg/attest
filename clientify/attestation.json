@@ -2,15 +2,15 @@
   "$complyVersion": "1.2",
   "slug": "clientify",
   "name": "Clientify",
-  "legalName": null,
+  "legalName": "Clientify, SL",
   "category": "CRM & Sales",
   "subcategory": "CRM & Marketing Automation",
   "description": "All-in-one CRM, marketing automation and omnichannel communications platform for SMBs, with WhatsApp, Instagram, email, telephony and live chat. Bundles sales pipelines, lead scoring, automations, landing pages, e-signature and AI-assisted features.",
   "website": "https://clientify.com",
   "privacyPolicyUrl": "https://clientify.com/politicas-de-privacidad",
   "trustCenterUrl": null,
-  "dpaUrl": null,
-  "dpaAvailability": null,
+  "dpaUrl": "https://clientify.com/politicas-de-privacidad",
+  "dpaAvailability": "public",
   "securityPageUrl": "https://clientify.com/wp-content/uploads/2024/12/SGSI-PSI-01._Politica_de_Seguridad_de_la_Informacion-4921308.pdf",
   "certifications": [
     "ISO 27001"
@@ -26,73 +26,73 @@
   "subprocessors": [
     {
       "name": "Amazon Web Services",
-      "purpose": "Cloud hosting",
-      "location": "Unknown"
+      "purpose": "Servidores",
+      "location": null
     },
     {
-      "name": "DigitalOcean",
-      "purpose": "Cloud hosting",
-      "location": "Unknown"
-    },
-    {
-      "name": "Google Workspace",
-      "purpose": "Office productivity",
-      "location": "US/EU"
+      "name": "Digital Ocean",
+      "purpose": "Alojamiento de los Servidores",
+      "location": null
     },
     {
       "name": "PayPal",
-      "purpose": "Payment processing",
-      "location": "US"
+      "purpose": "Pasarela de pagos",
+      "location": null
     },
     {
       "name": "Stripe",
-      "purpose": "Payment processing",
-      "location": "US"
+      "purpose": "Pasarela de pagos",
+      "location": null
     },
     {
       "name": "Intercom",
-      "purpose": "Customer support",
-      "location": "US"
+      "purpose": "Software de soporte técnico",
+      "location": null
     },
     {
-      "name": "Usercentrics (Cookiebot)",
-      "purpose": "Cookie consent",
-      "location": "EU"
+      "name": "Usercentrics A/S",
+      "purpose": "Aceptación de cookies",
+      "location": null
     },
     {
-      "name": "SendGrid",
-      "purpose": "Transactional email",
-      "location": "US"
+      "name": "G-Suite (Google)",
+      "purpose": "Paquete de aplicaciones",
+      "location": null
     },
     {
-      "name": "Zapier",
-      "purpose": "Integrations",
-      "location": "US"
+      "name": "Sendgrid",
+      "purpose": "Servidores de envío de correo",
+      "location": null
     },
     {
-      "name": "Bird (MessageBird)",
-      "purpose": "Messaging delivery",
-      "location": "EU"
-    },
-    {
-      "name": "Holded",
-      "purpose": "Accounting software",
-      "location": "Spain"
+      "name": "Zapier, Inc.",
+      "purpose": "Unknown",
+      "location": null
     },
     {
       "name": "Trideco Asesores, SLP",
-      "purpose": "Legal counsel",
-      "location": "Spain"
+      "purpose": "Asesoría jurídica",
+      "location": null
     },
     {
       "name": "ACV Asesores",
-      "purpose": "Tax & accounting",
-      "location": "Spain"
+      "purpose": "servicios fiscales, financieros y contables",
+      "location": null
     },
     {
       "name": "Masalbe Servicios Globales, SL",
-      "purpose": "External DPO services",
-      "location": "Spain"
+      "purpose": "DPO Externo designado",
+      "location": null
+    },
+    {
+      "name": "Holded",
+      "purpose": "Software de contabilidad",
+      "location": null
+    },
+    {
+      "name": "Bird",
+      "purpose": "Servidores de envío de correos",
+      "location": null
     }
   ],
   "transferSafeguards": "EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (SCCs) where applicable; Transfer Impact Assessments performed.",
@@ -118,8 +118,8 @@
     "transparencyLevel": "opaque",
     "models": []
   },
-  "transparencyScore": 60,
+  "transparencyScore": 70,
   "dpaAnalysis": null,
   "expertReviews": [],
-  "generated": "2026-10-18"
+  "generated": "2026-10-21"
 }

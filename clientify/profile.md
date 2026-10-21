@@ -1,16 +1,19 @@
 ---
 slug: clientify
 name: "Clientify"
+legalName: "Clientify, SL"
 category: "CRM & Sales"
 subcategory: "CRM & Marketing Automation"
 status: "Self-Reported"
 jurisdictions: ["EU"]
-transparencyScore: 60
+transparencyScore: 70
 
-generated: "2026-10-18"
+generated: "2026-10-21"
 ---
 
 # Clientify
+
+_Legal entity: Clientify, SL_
 
 **CRM & Sales** / CRM & Marketing Automation | Self-Reported | EU
 
@@ -18,7 +21,7 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 ## Summary
 
-- Transparency Score: 60%
+- Transparency Score: 70%
 
 - Designated DPO: Yes
 
@@ -35,8 +38,9 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 ## Resources & Safeguards
 
-- ISO 27001
+- Certifications: ISO 27001
 
+- [DPA](https://clientify.com/politicas-de-privacidad)
 - [Privacy Notice](https://clientify.com/politicas-de-privacidad)
 - [Security Page](https://clientify.com/wp-content/uploads/2024/12/SGSI-PSI-01._Politica_de_Seguridad_de_la_Informacion-4921308.pdf)
 - [Website](https://clientify.com)
@@ -50,20 +54,20 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 | Name | Purpose | Location |
 |------|---------|----------|
-| Amazon Web Services | Cloud hosting | Unknown |
-| DigitalOcean | Cloud hosting | Unknown |
-| Google Workspace | Office productivity | US/EU |
-| PayPal | Payment processing | US |
-| Stripe | Payment processing | US |
-| Intercom | Customer support | US |
-| Usercentrics (Cookiebot) | Cookie consent | EU |
-| SendGrid | Transactional email | US |
-| Zapier | Integrations | US |
-| Bird (MessageBird) | Messaging delivery | EU |
-| Holded | Accounting software | Spain |
-| Trideco Asesores, SLP | Legal counsel | Spain |
-| ACV Asesores | Tax & accounting | Spain |
-| Masalbe Servicios Globales, SL | External DPO services | Spain |
+| Amazon Web Services | Servidores | — |
+| Digital Ocean | Alojamiento de los Servidores | — |
+| PayPal | Pasarela de pagos | — |
+| Stripe | Pasarela de pagos | — |
+| Intercom | Software de soporte técnico | — |
+| Usercentrics A/S | Aceptación de cookies | — |
+| G-Suite (Google) | Paquete de aplicaciones | — |
+| Sendgrid | Servidores de envío de correo | — |
+| Zapier, Inc. | Unknown | — |
+| Trideco Asesores, SLP | Asesoría jurídica | — |
+| ACV Asesores | servicios fiscales, financieros y contables | — |
+| Masalbe Servicios Globales, SL | DPO Externo designado | — |
+| Holded | Software de contabilidad | — |
+| Bird | Servidores de envío de correos | — |
 
 ## International Data Transfers
 
@@ -71,6 +75,6 @@ EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (
 
 ---
 
-*Generated 2026-10-18.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-21.*
 
-*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
