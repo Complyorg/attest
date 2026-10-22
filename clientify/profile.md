@@ -1,16 +1,19 @@
 ---
 slug: clientify
 name: "Clientify"
+legalName: "Clientify, SL"
 category: "CRM & Sales"
 subcategory: "CRM & Marketing Automation"
 status: "Self-Reported"
 jurisdictions: ["EU"]
 transparencyScore: 70
 
-generated: "2026-10-21"
+generated: "2026-10-22"
 ---
 
 # Clientify
+
+_Legal entity: Clientify, SL_
 
 **CRM & Sales** / CRM & Marketing Automation | Self-Reported | EU
 
@@ -35,7 +38,7 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 ## Resources & Safeguards
 
-- ISO 27001
+- Certifications: ISO 27001
 
 - [DPA](https://clientify.com/politicas-de-privacidad)
 - [Privacy Notice](https://clientify.com/politicas-de-privacidad)
@@ -72,6 +75,6 @@ EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (
 
 ---
 
-*Generated 2026-10-21.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-22.*
 
-*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
