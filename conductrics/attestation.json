@@ -13,6 +13,7 @@
   "dpaAvailability": null,
   "securityPageUrl": "https://www.conductrics.com/security-and-compliance/",
   "certifications": [
+    "SOC 2 Type II",
     "SOC 2 Type 2"
   ],
   "frameworks": [
@@ -272,5 +273,5 @@
       }
     }
   ],
-  "generated": "2026-10-22"
+  "generated": "2026-10-23"
 }

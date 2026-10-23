@@ -1,24 +1,27 @@
 ---
 slug: sealmetrics
 name: "Sealmetrics"
+legalName: "Sealmetrics S.L."
 category: "Analytics & BI"
 subcategory: "Web Analytics"
 status: "Expert-Verified"
 jurisdictions: ["EU"]
-transparencyScore: 80
+transparencyScore: 90
 dpaComplianceScore: 85
-generated: "2026-10-22"
+generated: "2026-10-23"
 ---
 
 # Sealmetrics
 
+_Legal entity: Sealmetrics S.L._
+
 **Analytics & BI** / Web Analytics | Expert-Verified | EU
 
-Cookieless web analytics for online shops, run by Sealmetrics S.L. (Barcelona, Spain). Records page views, events and conversions without analytics cookies or persistent identifiers and reports aggregate data only. Visitor data is stored in Dublin, Ireland.
+Cookieless web analytics for online shops, run by Sealmetrics S.L. Records page views, events and conversions without analytics cookies or persistent identifiers and reports aggregate data only. Visitor data is stored in Dublin, Ireland.
 
 ## Summary
 
-- Transparency Score: 80%
+- Transparency Score: 90%
 - DPA Compliance Score: 85%
 - Designated DPO: No
 
@@ -42,8 +45,7 @@ Cookieless web analytics for online shops, run by Sealmetrics S.L. (Barcelona, S
 
 ### Privacy Enhancing Measures
 
-- Anonymization
-- Pseudonymization
+- **De-Identification**: Pseudonymization, Anonymization
 
 - [DPA](https://sealmetrics.com/dpa/)
 - [Privacy Notice](https://sealmetrics.com/privacy/)
@@ -53,7 +55,11 @@ Cookieless web analytics for online shops, run by Sealmetrics S.L. (Barcelona, S
 
 ## AI Disclosure
 
-This vendor does not use artificial intelligence.
+- Transparency Level: **Transparent**
+
+| Model | Type | Provider | EU AI Act Risk | Open Source |
+|-------|------|----------|----------------|-------------|
+| Seal AI (open model, run at Scaleway) | LLM | — | — | — |
 
 ## DPA Compliance Analysis
 
@@ -76,13 +82,13 @@ Visitor data is processed and stored only in the EU (hosting in Ireland, default
 
 ## Expert Reviews
 
-### EXP-2026-SM01 (Legal) — 2026-03-06 (vendor.watch)
+### EXP-2026-SM01 (Legal) — 2026-03-06
 
 Seal Metrics provides cookieless, consent-free web analytics by design. Their architecture ensures no personal data is collected, removing the need for cookie consent banners. Data processing is fully EU-based via Noraina (Ireland). While they do not hold ISO 27001 or SOC 2 certifications directly, their infrastructure provider Noraina maintains ISO 27001 certification. Seal Metrics has a comprehensive DPA, a Business Continuity Plan, and Data Breach Notification Procedures in place. All six core principles are verified.
 
 
 ---
 
-*Generated 2026-10-22.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-23.*
 
-*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*

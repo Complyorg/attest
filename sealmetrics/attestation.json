@@ -5,7 +5,7 @@
   "legalName": "Sealmetrics S.L.",
   "category": "Analytics & BI",
   "subcategory": "Web Analytics",
-  "description": "Cookieless web analytics for online shops, run by Sealmetrics S.L. (Barcelona, Spain). Records page views, events and conversions without analytics cookies or persistent identifiers and reports aggregate data only. Visitor data is stored in Dublin, Ireland.",
+  "description": "Cookieless web analytics for online shops, run by Sealmetrics S.L. Records page views, events and conversions without analytics cookies or persistent identifiers and reports aggregate data only. Visitor data is stored in Dublin, Ireland.",
   "website": "https://sealmetrics.com",
   "privacyPolicyUrl": "https://sealmetrics.com/privacy/",
   "trustCenterUrl": "https://sealmetrics.com/trust/",
@@ -60,11 +60,19 @@
   "euAiActRole": null,
   "iso42001Certified": null,
   "aiDisclosure": {
-    "status": "none",
-    "transparencyLevel": "n/a",
-    "models": []
+    "status": "disclosed",
+    "transparencyLevel": "transparent",
+    "models": [
+      {
+        "name": "Seal AI (open model, run at Scaleway)",
+        "type": "LLM",
+        "provider": null,
+        "euAiActRiskTier": null,
+        "isOpenSource": null
+      }
+    ]
   },
-  "transparencyScore": 80,
+  "transparencyScore": 90,
   "dpaAnalysis": {
     "overallScore": 85,
     "gdpr": {
@@ -236,5 +244,5 @@
       }
     }
   ],
-  "generated": "2026-10-22"
+  "generated": "2026-10-23"
 }

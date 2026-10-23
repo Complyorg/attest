@@ -8,7 +8,7 @@
   "description": "All-in-one CRM, marketing automation and omnichannel communications platform for SMBs, with WhatsApp, Instagram, email, telephony and live chat. Bundles sales pipelines, lead scoring, automations, landing pages, e-signature and AI-assisted features.",
   "website": "https://clientify.com",
   "privacyPolicyUrl": "https://clientify.com/politicas-de-privacidad",
-  "trustCenterUrl": null,
+  "trustCenterUrl": "https://clientify.com/centro-de-confianza",
   "dpaUrl": "https://clientify.com/politicas-de-privacidad",
   "dpaAvailability": "public",
   "securityPageUrl": "https://clientify.com/wp-content/uploads/2024/12/SGSI-PSI-01._Politica_de_Seguridad_de_la_Informacion-4921308.pdf",
@@ -21,8 +21,10 @@
   "gdprCompliant": true,
   "ccpaCompliant": null,
   "hipaaCompliant": null,
-  "dataLocations": [],
-  "hasEuDataCenter": null,
+  "dataLocations": [
+    "EU"
+  ],
+  "hasEuDataCenter": true,
   "subprocessors": [
     {
       "name": "Amazon Web Services",
@@ -108,7 +110,8 @@
   "euAiActCompliant": null,
   "aiCapabilities": [
     "Text Generation",
-    "Agents"
+    "Agents",
+    "Lead scoring"
   ],
   "aiTechniques": [],
   "euAiActRole": null,
@@ -118,8 +121,8 @@
     "transparencyLevel": "opaque",
     "models": []
   },
-  "transparencyScore": 70,
+  "transparencyScore": 80,
   "dpaAnalysis": null,
   "expertReviews": [],
-  "generated": "2026-10-22"
+  "generated": "2026-10-23"
 }

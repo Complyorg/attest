@@ -1,16 +1,19 @@
 ---
 slug: clientify
 name: "Clientify"
+legalName: "Clientify, SL"
 category: "CRM & Sales"
 subcategory: "CRM & Marketing Automation"
 status: "Self-Reported"
 jurisdictions: ["EU"]
-transparencyScore: 70
+transparencyScore: 80
 
-generated: "2026-10-22"
+generated: "2026-10-23"
 ---
 
 # Clientify
+
+_Legal entity: Clientify, SL_
 
 **CRM & Sales** / CRM & Marketing Automation | Self-Reported | EU
 
@@ -18,7 +21,7 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 
 ## Summary
 
-- Transparency Score: 70%
+- Transparency Score: 80%
 
 - Designated DPO: Yes
 
@@ -30,15 +33,16 @@ All-in-one CRM, marketing automation and omnichannel communications platform for
 | Data Minimization | Pending |
 | Accountability | Submitted |
 | Security | Pending |
-| Quality | Pending |
+| Quality | Submitted |
 | Participation | Submitted |
 
 ## Resources & Safeguards
 
-- ISO 27001
+- Certifications: ISO 27001
 
 - [DPA](https://clientify.com/politicas-de-privacidad)
 - [Privacy Notice](https://clientify.com/politicas-de-privacidad)
+- [Trust Center](https://clientify.com/centro-de-confianza)
 - [Security Page](https://clientify.com/wp-content/uploads/2024/12/SGSI-PSI-01._Politica_de_Seguridad_de_la_Informacion-4921308.pdf)
 - [Website](https://clientify.com)
 
@@ -72,6 +76,6 @@ EU-U.S. Data Privacy Framework adequacy decision; Standard Contractual Clauses (
 
 ---
 
-*Generated 2026-10-22.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-23.*
 
-*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
