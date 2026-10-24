@@ -114,7 +114,7 @@
   },
   "transparencyScore": 90,
   "dpaAnalysis": {
-    "overallScore": 92,
+    "overallScore": 100,
     "gdpr": {
       "score": 100,
       "total": 8,
@@ -212,13 +212,13 @@
       ]
     },
     "usState": {
-      "score": 60,
+      "score": 100,
       "total": 5,
       "clauses": [
         {
           "key": "us_binding_instructions",
           "label": "Binding instructions",
-          "found": false,
+          "found": true,
           "article": "State Processor Laws"
         },
         {
@@ -230,7 +230,7 @@
         {
           "key": "us_delete_return",
           "label": "Delete or return data",
-          "found": false,
+          "found": true,
           "article": "State Processor Laws"
         },
         {
@@ -284,5 +284,5 @@
       }
     }
   ],
-  "generated": "2026-10-23"
+  "generated": "2026-10-24"
 }

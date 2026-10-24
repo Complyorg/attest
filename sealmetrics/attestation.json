@@ -74,7 +74,7 @@
   },
   "transparencyScore": 90,
   "dpaAnalysis": {
-    "overallScore": 85,
+    "overallScore": 80,
     "gdpr": {
       "score": 100,
       "total": 8,
@@ -130,13 +130,13 @@
       ]
     },
     "ccpa": {
-      "score": 50,
+      "score": 33,
       "total": 6,
       "clauses": [
         {
           "key": "ccpa_purpose_limit",
           "label": "Purpose limitation",
-          "found": true,
+          "found": false,
           "article": "CCPA §1798.140(ag)"
         },
         {
@@ -244,5 +244,5 @@
       }
     }
   ],
-  "generated": "2026-10-23"
+  "generated": "2026-10-24"
 }
