@@ -1,16 +1,19 @@
 ---
 slug: conductrics
 name: "Conductrics"
+legalName: "Conductrics Inc."
 category: "Personalization & Engagement"
 subcategory: "A/B Testing"
 status: "Expert-Verified"
 jurisdictions: ["EU", "CA", "US"]
 transparencyScore: 90
 dpaComplianceScore: 100
-generated: "2026-10-26"
+generated: "2026-10-27"
 ---
 
 # Conductrics
+
+_Legal entity: Conductrics Inc._
 
 **Personalization & Engagement** / A/B Testing | Expert-Verified | EU, CA, US
 
@@ -35,16 +38,14 @@ A/B testing and adaptive experience optimization platform. Processing is limited
 
 ## Resources & Safeguards
 
-- SOC 2 Type II
-- SOC 2 Type 2
+- Certifications: SOC 2 Type II, SOC 2 Type 2
 - Encryption at rest
 - Encryption in transit
 - Breach notification: 72 hours
 
 ### Privacy Enhancing Measures
 
-- Anonymization
-- k-Anonymity
+- **De-Identification**: Anonymization, k-Anonymity
 
 - [Privacy Notice](https://www.conductrics.com/privacy-policy/)
 - [Trust Center](https://attest.comply.org/conductrics/)
@@ -82,13 +83,13 @@ SCCs (EU 2021/914, Module Two) with a documented transfer impact assessment; per
 
 ## Expert Reviews
 
-### EXP-2026-SM03 (Legal) — 2026-03-06 (vendor.watch)
+### EXP-2026-SM03 (Legal) — 2026-03-06
 
 Conductrics provides privacy-focused A/B testing and experimentation. Data processing is available in both EU and US regions via Google Cloud Platform and Amazon Web Services. Conductrics applies anonymization and K-Anonymity techniques to protect individual-level data. They encrypt data at rest and in transit, and have a comprehensive DPA covering all GDPR and CCPA required clauses at 100%. All six core principles are verified.
 
 
 ---
 
-*Generated 2026-10-26.*
+*Data provided by [VendorWatch](https://vendor.watch). Generated 2026-10-27.*
 
-*[Comply.org Attestation Standard v1.2](https://comply.org) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
+*[Comply.org Attestation Standard v1.2](https://github.com/comply-org/v1) — Code: MIT · Specification: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)*
