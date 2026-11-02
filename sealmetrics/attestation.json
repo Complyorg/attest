@@ -73,7 +73,141 @@
     ]
   },
   "transparencyScore": 90,
-  "dpaAnalysis": null,
+  "dpaAnalysis": {
+    "overallScore": 71,
+    "gdpr": {
+      "score": 100,
+      "total": 8,
+      "clauses": [
+        {
+          "key": "gdpr_instructions",
+          "label": "Process only on documented instructions",
+          "found": true,
+          "article": "Art. 28(3)(a)"
+        },
+        {
+          "key": "gdpr_confidentiality",
+          "label": "Confidentiality obligation",
+          "found": true,
+          "article": "Art. 28(3)(b)"
+        },
+        {
+          "key": "gdpr_security",
+          "label": "Technical & organizational measures",
+          "found": true,
+          "article": "Art. 28(3)(c)"
+        },
+        {
+          "key": "gdpr_subprocessor",
+          "label": "Sub-processor conditions",
+          "found": true,
+          "article": "Art. 28(3)(d)"
+        },
+        {
+          "key": "gdpr_data_subject",
+          "label": "Data subject rights assistance",
+          "found": true,
+          "article": "Art. 28(3)(e)"
+        },
+        {
+          "key": "gdpr_breach_dpia",
+          "label": "Breach notification & DPIA assistance",
+          "found": true,
+          "article": "Art. 28(3)(f)"
+        },
+        {
+          "key": "gdpr_deletion",
+          "label": "Deletion/return of data",
+          "found": true,
+          "article": "Art. 28(3)(g)"
+        },
+        {
+          "key": "gdpr_audit",
+          "label": "Audit rights",
+          "found": true,
+          "article": "Art. 28(3)(h)"
+        }
+      ]
+    },
+    "ccpa": {
+      "score": 17,
+      "total": 6,
+      "clauses": [
+        {
+          "key": "ccpa_purpose_limit",
+          "label": "Purpose limitation",
+          "found": false,
+          "article": "CCPA §1798.140(ag)"
+        },
+        {
+          "key": "ccpa_no_sell",
+          "label": "No selling/sharing",
+          "found": false,
+          "article": "CCPA §1798.100(d)"
+        },
+        {
+          "key": "ccpa_no_combine",
+          "label": "No combining data",
+          "found": false,
+          "article": "CCPA §1798.140(ag)(1)"
+        },
+        {
+          "key": "ccpa_compliance",
+          "label": "Compliance with CCPA",
+          "found": false,
+          "article": "CCPA §1798.100"
+        },
+        {
+          "key": "ccpa_notify",
+          "label": "Right to notify non-compliance",
+          "found": false,
+          "article": "CCPA §1798.100(d)(3)"
+        },
+        {
+          "key": "ccpa_grant_audit",
+          "label": "Allow compliance assessment",
+          "found": true,
+          "article": "CCPA §1798.100(d)(4)"
+        }
+      ]
+    },
+    "usState": {
+      "score": 80,
+      "total": 5,
+      "clauses": [
+        {
+          "key": "us_binding_instructions",
+          "label": "Binding instructions",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_duty_of_care",
+          "label": "Duty of confidentiality",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_delete_return",
+          "label": "Delete or return data",
+          "found": true,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_sub_contract",
+          "label": "Sub-contractor requirements",
+          "found": false,
+          "article": "State Processor Laws"
+        },
+        {
+          "key": "us_audit_assessment",
+          "label": "Assessment/audit",
+          "found": true,
+          "article": "State Processor Laws"
+        }
+      ]
+    }
+  },
   "expertReviews": [
     {
       "expertRefCode": "EXP-2026-SM01",
@@ -110,5 +244,5 @@
       }
     }
   ],
-  "generated": "2026-11-01"
+  "generated": "2026-11-02"
 }
